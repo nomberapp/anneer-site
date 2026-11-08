@@ -98,12 +98,12 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--blue)}
 .skip{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.skip:focus{width:auto;height:auto;clip:auto;top:12px;inset-inline-start:16px;background:#fff;padding:8px 12px;z-index:10}
 /* header */
 header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:76px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:66px}
 .brand{display:flex;align-items:center;gap:14px;color:var(--navy)}
 .brand:hover{color:var(--navy)}
 .brand .mark{width:40px;height:40px;flex:none}
-.brand .logo{width:128px;height:auto;display:block}
-.brand .t2{font-size:8.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.brand .logo{width:92px;height:auto;display:block}
+.brand .t2{display:none}
 nav.main{display:flex;align-items:center;gap:30px}
 nav.main a{font-size:15px;font-weight:500;color:var(--ink);padding:8px 0;border-bottom:2px solid transparent}
 nav.main a:hover,nav.main a[aria-current]{color:var(--navy);border-bottom-color:var(--navy)}
@@ -118,7 +118,7 @@ nav.main a.btn{color:#fff;padding:0 18px;border:1px solid var(--navy)}nav.main a
 .topicbar .wrap{display:flex;gap:24px;align-items:center;min-height:46px;overflow-x:auto;white-space:nowrap;font-size:13.5px;scrollbar-width:none}
 .topicbar b{font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.08em;font-size:12px}
 .topicbar a{color:#39424D}.topicbar a:hover{color:var(--blue)}
-@media (max-width:960px){.menu-btn{display:block}nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px}nav.main.open{display:flex}nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}nav.main .btn{margin-top:12px}.bar{min-height:72px;position:relative}.brand .logo{width:112px}.brand .t2{font-size:9px;letter-spacing:.08em}}
+@media (max-width:960px){.menu-btn{display:block}nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px}nav.main.open{display:flex}nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}nav.main .btn{margin-top:12px}.bar{min-height:72px;position:relative}.brand .logo{width:84px}.brand .t2{font-size:9px;letter-spacing:.08em}}
 /* type */
 .label{font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .label a:hover{text-decoration:underline}
@@ -291,7 +291,7 @@ def footer_html(ar):
     if ar:
         return f"""<footer class="site"><div class="wrap">
 <div class="cols">
-<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:130px;height:auto"><div class="fname" style="font-family:var(--ar);letter-spacing:0;font-size:20px;margin-top:12px">مركز النير</div><div class="ar">للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">مركز أبحاث مستقل يقدّم تحليلاً رصيناً للقضايا التي تشكّل مستقبل الدول والمجتمعات.</p></div>
+<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:100px;height:auto"><div class="fname" style="font-family:var(--ar);letter-spacing:0;font-size:20px;margin-top:12px">مركز النير</div><div class="ar">للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">مركز أبحاث مستقل يقدّم تحليلاً رصيناً للقضايا التي تشكّل مستقبل الدول والمجتمعات.</p></div>
 <div><h4>المركز</h4><ul><li><a href="/ar/about/">عن المركز</a></li><li><a href="/ar/about/#approach">منهجنا</a></li><li><a href="/ar/contact/">تواصل معنا</a></li></ul></div>
 <div><h4>الأبحاث</h4><ul><li><a href="/ar/research/">جميع الأبحاث</a></li><li><a href="/ar/topics/">مجالات البحث</a></li></ul></div>
 <div><h4>تواصل</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/">English</a></li></ul></div>
@@ -300,7 +300,7 @@ def footer_html(ar):
 </div></footer>"""
     return f"""<footer class="site"><div class="wrap">
 <div class="cols">
-<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:130px;height:auto"><div style="margin-top:6px">Center for Policy and Strategic Studies</div><div class="ar" lang="ar" dir="rtl" style="text-align:left">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p></div>
+<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:100px;height:auto"><div style="margin-top:6px">Center for Policy and Strategic Studies</div><div class="ar" lang="ar" dir="rtl" style="text-align:left">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p></div>
 <div><h4>Institution</h4><ul><li><a href="/about/">About</a></li><li><a href="/about/#approach">Our approach</a></li><li><a href="/about/#standards">Research standards</a></li><li><a href="/contact/">Contact</a></li></ul></div>
 <div><h4>Research</h4><ul><li><a href="/research/">All research</a></li><li><a href="/topics/">Topics</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></div>
 <div><h4>Connect</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/contact/#media">Media inquiries</a></li><li><a href="/contact/#subscribe">Subscribe</a></li><li><a href="/ar/" lang="ar">العربية</a></li></ul></div>
