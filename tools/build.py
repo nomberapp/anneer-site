@@ -168,6 +168,7 @@ footer.site ul{list-style:none;margin:0;padding:0}footer.site li{margin:0 0 10px
 footer.site a{color:#DDE4EC}footer.site a:hover{color:#fff;text-decoration:underline}
 footer.site .fname{font-family:var(--serif);font-weight:700;color:#fff;font-size:24px;letter-spacing:.16em}
 footer.site .ar{font-family:var(--ar);color:#C9D3DF;margin-top:6px}
+footer.site .social,.contact-box .social{display:flex;gap:10px;margin-top:18px}.social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.25);border-radius:50%}.contact-box .social a{border-color:var(--line)}.social a:hover{background:rgba(255,255,255,.08)}.contact-box .social a:hover{background:var(--tint)}
 footer.site .copy{border-top:1px solid rgba(255,255,255,.14);margin-top:44px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 /* page head */
 .page-head{padding:56px 0 40px;border-bottom:1px solid var(--line)}
@@ -263,6 +264,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <meta property="og:type" content="{og_type}">
 <meta property="og:image" content="{SITE}{og_image}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@anneercenter">
 <link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/icon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/icon-180.png">
 <link rel="alternate" type="application/rss+xml" title="Anneer Center research" href="/feed.xml">
 {FONTS}{FONTS_AR if ar else ''}
@@ -285,6 +287,13 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 </html>
 """
 
+SOCIAL = [("X", "https://x.com/anneercenter", '<path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.4l8.1-9.3L1 2h7.1l5 6.6L18.9 2zm-1.2 18h1.7L7.1 3.9H5.3L17.7 20z"/>'),
+          ("Instagram", "https://www.instagram.com/anneercenter", '<path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.8a1.4 1.4 0 100 2.9 1.4 1.4 0 000-2.9z"/>'),
+          ("TikTok", "https://www.tiktok.com/@anneercenter", '<path d="M19.6 6.7a4.8 4.8 0 01-3.8-4.2V2h-3.4v13.6a2.9 2.9 0 11-2-2.8V9.3a6.3 6.3 0 105.4 6.3V8.7a8.2 8.2 0 004.8 1.5V6.8z"/>')]
+
+def social_icons(color="#DDE4EC"):
+    return '<div class="social">' + "".join(f'<a href="{u}" target="_blank" rel="noopener" aria-label="Anneer Center on {n}"><svg viewBox="0 0 24 24" width="20" height="20" fill="{color}" aria-hidden="true">{d}</svg></a>' for n, u, d in SOCIAL) + '</div>'
+
 def footer_html(ar):
     y = datetime.date.today().year
     if ar:
@@ -299,10 +308,10 @@ def footer_html(ar):
 </div></footer>"""
     return f"""<footer class="site"><div class="wrap">
 <div class="cols">
-<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:130px;height:auto"><div style="margin-top:6px">Center for Policy and Strategic Studies</div><div class="ar" lang="ar" dir="rtl" style="text-align:left">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p></div>
+<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:130px;height:auto"><div style="margin-top:6px">Center for Policy and Strategic Studies</div><div class="ar" lang="ar" dir="rtl" style="text-align:left">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p>{social_icons()}</div>
 <div><h4>Institution</h4><ul><li><a href="/about/">About</a></li><li><a href="/about/#approach">Our approach</a></li><li><a href="/about/#standards">Research standards</a></li><li><a href="/contact/">Contact</a></li></ul></div>
 <div><h4>Research</h4><ul><li><a href="/research/">All research</a></li><li><a href="/topics/">Topics</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></div>
-<div><h4>Connect</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/contact/#media">Media inquiries</a></li><li><a href="/contact/#subscribe">Subscribe</a></li></ul></div>
+<div><h4>Connect</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/contact/#media">Media inquiries</a></li><li><a href="/contact/#subscribe">Subscribe</a></li><li><a href="https://x.com/anneercenter" target="_blank" rel="noopener">X (Twitter)</a></li><li><a href="https://www.instagram.com/anneercenter" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@anneercenter" target="_blank" rel="noopener">TikTok</a></li></ul></div>
 </div>
 <div class="copy"><span>© {y} Anneer Center for Policy and Strategic Studies. All rights reserved.</span><span>Views expressed in Anneer publications are those of their authors.</span></div>
 </div></footer>"""
@@ -431,7 +440,7 @@ def article(a):
     if in_list: parts.append("</ul>")
     src_items = "".join(f"<li>{s}</li>" for s in c["sources"])
     url = SITE + url_of(a)
-    share = (f'<div class="share"><a href="https://twitter.com/intent/tweet?url={url}&amp;text={esc(a["title"])}" target="_blank" rel="noopener">Share on X</a>'
+    share = (f'<div class="share"><a href="https://twitter.com/intent/tweet?url={url}&amp;text={esc(a["title"])}&amp;via=anneercenter" target="_blank" rel="noopener">Share on X</a>'
              f'<a href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noopener">LinkedIn</a>'
              f'<a href="mailto:?subject={esc(a["title"])}&amp;body={url}">Email</a></div>')
     hero = (f'<figure class="hero-img"><img src="{a["image"]}" alt="{esc(a["image_alt"])}" width="1600" height="900"><figcaption>Illustration: Anneer Center</figcaption></figure>' if a["image"] else "")
@@ -512,7 +521,9 @@ def contact():
 <div class="contact-box"><h3>General enquiries</h3><p>Questions about the Center, our research or partnerships.</p><a href="mailto:{EMAIL}">{EMAIL}</a></div>
 <div class="contact-box" id="media" style="scroll-margin-top:140px"><h3>Media</h3><p>Interview requests and media enquiries about our publications.</p><a href="mailto:{EMAIL}?subject=Media%20enquiry">{EMAIL}</a></div>
 <div class="contact-box" id="subscribe" style="scroll-margin-top:140px"><h3>Subscribe</h3><p>Receive new research from Anneer by email.</p><a href="mailto:{EMAIL}?subject=Subscribe%20to%20Anneer%20research">Subscribe by email</a></div>
-</div></div></section>"""
+</div>
+<div class="contact-box" style="margin-top:40px;max-width:420px"><h3>Follow us</h3><p>@anneercenter on X, Instagram and TikTok.</p>{social_icons("#0C2850")}</div>
+</div></section>"""
     return page("/contact/", "Contact", "Contact Anneer Center for Policy and Strategic Studies.", body, active="/contact/")
 
 def ar_home():

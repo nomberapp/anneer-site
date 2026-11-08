@@ -88,6 +88,7 @@ footer.site ul{list-style:none;margin:0;padding:0}footer.site li{margin:0 0 10px
 footer.site a{color:#DDE4EC}footer.site a:hover{color:#fff;text-decoration:underline}
 footer.site .fname{font-family:var(--serif);font-weight:700;color:#fff;font-size:24px;letter-spacing:.16em}
 footer.site .ar{font-family:var(--ar);color:#C9D3DF;margin-top:6px}
+footer.site .social,.contact-box .social{display:flex;gap:10px;margin-top:18px}.social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.25);border-radius:50%}.contact-box .social a{border-color:var(--line)}.social a:hover{background:rgba(255,255,255,.08)}.contact-box .social a:hover{background:var(--tint)}
 footer.site .copy{border-top:1px solid rgba(255,255,255,.14);margin-top:44px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 /* page head */
 .page-head{padding:56px 0 40px;border-bottom:1px solid var(--line)}
