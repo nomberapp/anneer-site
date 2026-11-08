@@ -1,0 +1,620 @@
+{
+ "green": {
+  "body": [
+   {
+    "kind": "h1",
+    "html": "Who Is Benefiting from Green Energy?"
+   },
+   {
+    "kind": "p",
+    "html": "<em>By [Analyst 1], [Analyst 2] and [Analyst 3], Anneer Center</em>"
+   },
+   {
+    "kind": "p",
+    "html": "Debates about who wins the energy transition tend to be conducted in the vocabulary of the last one. Analysts ask which countries will become the new petrostates, which minerals will be the new oil, and whose sovereign wealth funds will swell on the profits of wind and sun. The questions are natural, because a century of hydrocarbons taught us that energy is a business of rents: whoever controls a scarce fuel controls a flow of unearned income, and with it a measure of power."
+   },
+   {
+    "kind": "p",
+    "html": "The difficulty is that renewable electricity does not behave like oil. It has no fuel cost, its equipment is manufactured rather than extracted, and its unit costs fall with every doubling of output. It is, in economic terms, a deflationary technology. Deflationary technologies do not usually enrich their sellers. They enrich their buyers, and they redistribute power towards whoever controls the few things that remain scarce."
+   },
+   {
+    "kind": "p",
+    "html": "This distinction matters more than it appears. If the transition were a contest over a new fuel, its winners would be the owners of that fuel. Because it is instead a collapse in the price of energy hardware, the gains are flowing in less obvious directions: to importers rather than exporters, to households that can pay cash rather than utilities that must borrow, and to whoever sits on the bottlenecks that cheap hardware cannot dissolve. Understanding who benefits from green energy therefore requires abandoning the petrostate analogy and asking a different question. Not who owns the resource, but who owns the constraint."
+   },
+   {
+    "kind": "h2",
+    "html": "The sellers' paradox"
+   },
+   {
+    "kind": "p",
+    "html": "Consider the country most often described as the transition's great winner. China's dominance of clean-energy manufacturing is not in dispute. The <a href=\"https://iea.org/reports/solar-pv-global-supply-chains/executive-summary\">International Energy Agency</a> estimates its share of every stage of solar panel production at more than 80%, roughly double its share of global demand. In batteries, the IEA places between 60% and 100% of each step of the supply chain inside China (<a href=\"https://www.batteriesinternational.com/?p=25095\">Batteries International</a>). By any conventional measure of industrial power, this is a commanding position."
+   },
+   {
+    "kind": "p",
+    "html": "Yet commanding the market has not meant capturing its rents. In the first half of 2025, China's four largest module makers, LONGi, Jinko, Trina and JA Solar, reported combined net losses of nearly RMB 11 billion, about $1.5 billion, two and a half times the losses of the year before (<a href=\"https://www.pv-tech.org/chinas-top-four-solar-manufacturers-suffer-1-54-billion-losses-h1-2025/\">PV Tech</a>). Revenues fell by between a quarter and a third as module prices stayed at historic lows. The firms that make most of the world's solar panels have, in effect, been selling them at a loss."
+   },
+   {
+    "kind": "p",
+    "html": "The implication is striking. A significant share of the value created by Chinese"
+   },
+   {
+    "kind": "p",
+    "html": "manufacturing is not accruing to China at all. It is being transferred, through prices below cost, to whoever buys the equipment. Beijing's industrial policy, designed to secure strategic advantage, has also functioned as an involuntary subsidy to the rest of the world's energy transition. China retains the jobs, the technological know-how and the geopolitical leverage that come with controlling a supply chain, and those are not small prizes. But the financial surplus has largely escaped. In a deflationary industry, even a near-monopolist struggles to keep it."
+   },
+   {
+    "kind": "h2",
+    "html": "The accidental beneficiaries"
+   },
+   {
+    "kind": "p",
+    "html": "Where has that surplus gone? Some of it to the grids of Europe and the United States, but the most consequential recipients are found where few climate strategies expected them: in the cities and farms of South Asia and Africa."
+   },
+   {
+    "kind": "p",
+    "html": "Pakistan is the clearest case. No government planned its solar transition. It was improvised by households and businesses responding to soaring tariffs, chronic outages and suddenly cheap Chinese modules. Cumulative panel imports reached about 50 GW by August 2025, making Pakistan the third-largest market for Chinese solar in the world (<a href=\"https://payneinstitute.mines.edu/pakistans-solar-surge/\">Payne Institute</a>), a volume roughly equal to the country's entire grid capacity (<a href=\"https://www.brecorder.com/news/amp/40418229\">Business Recorder</a>). Africa is following. In the twelve months to June 2025, the continent imported 15 GW of Chinese panels, up 60% in a year; twenty countries set import records, and in Sierra Leone the panels imported in a single year amounted to the equivalent of 61% of the country's entire electricity generation in 2023 (<a href=\"https://www.pv-magazine.com/2025/08/27/african-pv-imports-from-china-up-60-in-one-year-says-ember/\">Ember, via pv magazine</a>)."
+   },
+   {
+    "kind": "p",
+    "html": "What makes these booms analytically interesting is how they were financed. The conventional wisdom holds that the developing world is locked out of the transition by the cost of capital, and at utility scale that remains true. But a rooftop system bought outright, or a few panels purchased in increments, does not need a bank. Collapsing hardware prices have allowed millions of households to bypass the capital markets entirely and finance their own generation from savings. The cash buyer, long the weakest participant in the energy system, has become one of the transition's most direct beneficiaries."
+   },
+   {
+    "kind": "h2",
+    "html": "Where the rents survive"
+   },
+   {
+    "kind": "p",
+    "html": "If hardware is deflating, value does not vanish. It migrates to the points in the system that cheap hardware cannot reach. Three such bottlenecks now determine more about the distribution of gains than any solar factory."
+   },
+   {
+    "kind": "p",
+    "html": "The first is capital. A solar farm's costs are almost entirely upfront, which means the price"
+   },
+   {
+    "kind": "p",
+    "html": "of money effectively becomes the price of electricity. Two identical plants, one financed at 4% and the other at 10%, require annual capital payments about 70% apart over a 25- year life, though nothing about their technology differs. The IEA estimates that financing costs in emerging and developing economies are at least twice those in advanced economies or China, and higher still in Africa (<a href=\"https://energyforgrowth.org/?p=5287\">Energy for Growth Hub</a>). Africa holds nearly a fifth of the world's population but attracts only about 2% of global clean-energy investment (<a href=\"https://www.energymonitor.ai/newsletters/urgent-action-required-to-boost-climate-finance-in-africa-iea\">Energy Monitor</a>). Rooftops can escape this trap; national grids cannot."
+   },
+   {
+    "kind": "p",
+    "html": "The second is the grid itself. Generation has become abundant; the right to connect it has not. In the United States, about 2,600 GW of generation and storage was waiting in interconnection queues at the end of 2023, more than twice the country's installed capacity. Projects completed recently took over four years from request to operation, and fewer than one in five projects that applied between 2000 and 2018 had been built (<a href=\"https://emp.lbl.gov/news/grid-connection-backlog-grows-30-2023-dominated-requests-solar-wind-and-energy-storage\">Berkeley Lab</a>). In such a system, the scarce asset is not the panel but the permitted connection, and the owners of land near transmission, and of projects already holding a queue position, collect the premium."
+   },
+   {
+    "kind": "p",
+    "html": "The third is processing. Indonesia's 2020 ban on raw nickel exports is the most ambitious attempt by a resource-rich state to seize this bottleneck. Former President Joko Widodo reported that nickel export earnings rose roughly 19-fold, from $1.1 billion in 2014 to $20.9 billion in 2021 (<a href=\"https://www.argusmedia.com/pt/news-and-insights/latest-market-news/2402834-indonesia-to-ban-bauxite-exports-from-june-2023\">Argus</a>). But Chinese companies built more than 90% of the new smelters (<a href=\"https://www.csis.org/analysis/diversifying-investment-indonesias-mining-sector\">CSIS</a>), and generous tax holidays mean the state's fiscal gain is smaller than the export figures suggest (<a href=\"https://theconversation.com/indonesias-claim-that-banning-nickel-exports-spurs-downstreaming-is-questionable-180229\">The Conversation</a>). Jakarta succeeded in relocating the bottleneck to its own territory. It did not succeed in owning it."
+   },
+   {
+    "kind": "h2",
+    "html": "The regressive core"
+   },
+   {
+    "kind": "p",
+    "html": "The same logic that makes the transition progressive between countries can make it regressive within them. Where public money has been used to accelerate adoption, it has tended to follow those already able to adopt. Severin Borenstein and Lucas Davis found that the top income quintile of American households received about 60% of all US clean- energy tax credits, and about 90% of the credits for electric vehicles (<a href=\"https://www.nber.org/books-and-chapters/tax-policy-and-economy-volume-30/distributional-effects-us-clean-energy-tax-credits\">NBER</a>). More recent data show the pattern softening but not disappearing: the median income of American rooftop solar adopters in 2023 was $115,000, 53% above the national median, and renters remain largely excluded by the simple fact of not owning a roof (<a href=\"https://emp.lbl.gov/news/new-berkeley-lab-report-solar-adopter-income-and-demographic-trends\">Berkeley Lab</a>)."
+   },
+   {
+    "kind": "p",
+    "html": "The deeper problem lies in the grid's fixed costs. Networks, backup capacity and legacy contracts must be paid for whether or not anyone buys electricity from them. When affluent customers generate their own power, those costs are spread across a shrinking base of those who cannot. Pakistan shows how quickly this can turn. Capacity payments"
+   },
+   {
+    "kind": "p",
+    "html": "owed to power producers under take-or-pay contracts exceeded PKR 2 trillion, about $7"
+   },
+   {
+    "kind": "p",
+    "html": "billion, in 2024 (Payne Institute), while daytime demand on the grid fell. The country's energy minister put the arithmetic plainly: the same payments must now be met by fewer consumers (<a href=\"https://www.kuow.org/stories/pakistan-is-tapping-into-solar-power-at-an-unprecedented-rate-here-s-why\">KUOW/NPR</a>). The households that bypassed the grid are among the transition's winners. Those left on it are financing their exit."
+   },
+   {
+    "kind": "p",
+    "html": "None of this is inevitable; it is a matter of design. For two decades Germany funded renewables through a surcharge on electricity bills while largely exempting heavy industry. At one point, exempted firms consumed about a quarter of the country's power but paid roughly 2% of the levy, an exemption worth some €5 billion a year that households and small businesses absorbed (<a href=\"https://www.powermag.com/germany-reforms-renewable-energy-laws/\">POWER Magazine</a>). In 2022 Berlin abolished the surcharge and moved the cost onto a state fund financed partly by carbon-trading revenue (<a href=\"https://www.bundesregierung.de/breg-de/service/archiv-bundesregierung/renewable-energy-sources-act-levy-abolished-2011854\">German Federal Government</a>). The technology did not change. The distribution of its costs did."
+   },
+   {
+    "kind": "h2",
+    "html": "The politics of bottlenecks"
+   },
+   {
+    "kind": "p",
+    "html": "The answer to the question of who benefits from green energy is therefore more paradoxical than the familiar narratives allow. The industry's dominant manufacturer has struggled to profit from its dominance. Some of the poorest energy consumers in the world have captured gains that their governments did not plan for and their utilities cannot absorb. Meanwhile, the durable rents of the new system are accumulating not in fuel or in factories but in bottlenecks: cheap capital, scarce grid connections, mineral processing, and the political power to decide who pays for the network everyone still needs."
+   },
+   {
+    "kind": "p",
+    "html": "This has uncomfortable implications for several kinds of actor. For resource-rich states hoping to replicate the petrostate model with lithium, nickel or sunshine, it suggests that geology confers far less than it once did; what matters is control of processing and finance. For industrial powers, it suggests that manufacturing dominance is a strategic asset but not necessarily a profitable one. And for governments everywhere, it means that the distributional character of the transition will be determined less by technology than by tariff design, subsidy targeting and the cost of public borrowing. These are unglamorous instruments, but they decide who gains."
+   },
+   {
+    "kind": "p",
+    "html": "The central policy task follows from this. Governments should spend less effort competing for the commodity segments of the value chain, where deflation erodes margins, and more on owning or regulating its chokepoints: lowering the cost of capital through guarantees and risk-sharing, investing in transmission ahead of demand, and redesigning tariffs so that the fixed costs of the grid are not quietly shifted onto those"
+   },
+   {
+    "kind": "p",
+    "html": "least able to leave it. The petrostate era rewarded those who owned what lay beneath the"
+   },
+   {
+    "kind": "p",
+    "html": "ground. The electric era will reward those who own what lies between the panel and the plug."
+   }
+  ],
+  "sources_title": "Sources",
+  "sources": [
+   "<a href=\"https://iea.org/reports/solar-pv-global-supply-chains/executive-summary\">IEA, Solar PV Global Supply Chains: Executive Summary</a>",
+   "<a href=\"https://www.batteriesinternational.com/?p=25095\">Batteries International, IEA report counts global cost of China's battery dominance</a>",
+   "<a href=\"https://www.pv-tech.org/chinas-top-four-solar-manufacturers-suffer-1-54-billion-losses-h1-2025/\">PV Tech, China's top four solar manufacturers suffer US$1.54 billion in losses in H1 2025</a>",
+   "<a href=\"https://payneinstitute.mines.edu/pakistans-solar-surge/\">Payne Institute, Pakistan's Solar Surge</a>",
+   "<a href=\"https://www.brecorder.com/news/amp/40418229\">Business Recorder, Pakistan imported over 50 GW of solar panels</a>",
+   "<a href=\"https://www.pv-magazine.com/2025/08/27/african-pv-imports-from-china-up-60-in-one-year-says-ember/\">pv magazine, African PV imports from China up 60% in one year, says Ember</a>",
+   "<a href=\"https://energyforgrowth.org/?p=5287\">Energy for Growth Hub, Takeaways from the IEA 2024 World Energy Investment report</a>",
+   "<a href=\"https://www.energymonitor.ai/newsletters/urgent-action-required-to-boost-climate-finance-in-africa-iea\">Energy Monitor, Urgent action required to boost climate finance in Africa</a>",
+   "<a href=\"https://emp.lbl.gov/news/grid-connection-backlog-grows-30-2023-dominated-requests-solar-wind-and-energy-storage\">Berkeley Lab, Grid connection backlog grows by 30% in 2023</a>",
+   "<a href=\"https://www.argusmedia.com/pt/news-and-insights/latest-market-news/2402834-indonesia-to-ban-bauxite-exports-from-june-2023\">Argus, Indonesia to ban bauxite exports from June 2023</a>",
+   "<a href=\"https://www.csis.org/analysis/diversifying-investment-indonesias-mining-sector\">CSIS, Diversifying Investment in Indonesia's Mining Sector</a>",
+   "<a href=\"https://theconversation.com/indonesias-claim-that-banning-nickel-exports-spurs-downstreaming-is-questionable-180229\">The Conversation, Indonesia's claim that banning nickel exports spurs downstreaming is questionable</a>",
+   "<a href=\"https://www.nber.org/books-and-chapters/tax-policy-and-economy-volume-30/distributional-effects-us-clean-energy-tax-credits\">Borenstein and Davis, The Distributional Effects of US Clean Energy Tax Credits (NBER)</a>",
+   "<a href=\"https://emp.lbl.gov/news/new-berkeley-lab-report-solar-adopter-income-and-demographic-trends\">Berkeley Lab, Residential Solar-Adopter Income and Demographic Trends</a>",
+   "<a href=\"https://www.kuow.org/stories/pakistan-is-tapping-into-solar-power-at-an-unprecedented-rate-here-s-why\">KUOW/NPR, Pakistan is tapping into solar power at an unprecedented rate</a>",
+   "<a href=\"https://www.powermag.com/germany-reforms-renewable-energy-laws/\">POWER Magazine, Germany Reforms Renewable Energy Laws</a>",
+   "<a href=\"https://www.bundesregierung.de/breg-de/service/archiv-bundesregierung/renewable-energy-sources-act-levy-abolished-2011854\">German Federal Government, Renewables levy abolished</a>"
+  ]
+ },
+ "cities": {
+  "body": [
+   {
+    "kind": "h1",
+    "html": "Saudi Arabia Needs a National Strategy for Great Cities"
+   },
+   {
+    "kind": "p",
+    "html": "Sanad Falhan ·"
+   },
+   {
+    "kind": "p",
+    "html": "Saudi Arabia's transformation is usually described in terms of sectors: tourism, mining, logistics, entertainment, advanced manufacturing. It is less often described in terms of places. Yet the question of where new employment, universities, corporate decision- making and public investment settle will shape the Kingdom for longer than almost any single sectoral programme. It will determine how much of the country takes part in the transformation, what that transformation costs, and who bears those costs."
+   },
+   {
+    "kind": "p",
+    "html": "The argument of this essay is that the Kingdom needs an explicit national strategy for its system of cities. Such a strategy would not try to turn every city into a metropolis, which is neither feasible nor desirable. It would decide where sustained investment can produce additional centres of national significance, identify what each requires, and commit to building those capabilities over decades rather than budget cycles."
+   },
+   {
+    "kind": "p",
+    "html": "The case rests on three claims. First, urban success should be measured by the functions a city performs for others, not by its population or its construction spending. Second, the state already shapes economic geography heavily, so the real choice is between doing so deliberately and doing so by accident. Third, the costs and benefits of urban policy fall unevenly, and a credible strategy must say who gains and who pays."
+   },
+   {
+    "kind": "h2",
+    "html": "What makes a city great"
+   },
+   {
+    "kind": "p",
+    "html": "Population, construction expenditure and property values are the measures most often used to describe urban progress. They are also the measures most easily inflated by activity that does not last. A city can grow quickly while depending on public payrolls, temporary megaprojects or spending generated elsewhere. Cranes on the skyline can conceal a thin productive base."
+   },
+   {
+    "kind": "p",
+    "html": "A better test is functional. A city matters nationally when people and organisations beyond its boundaries need what it does. It may provide advanced medical care, manufacture specialised equipment, train researchers, organise regional trade, develop technology or shape intellectual and cultural life. Its significance rests on the quality and reach of those functions. Population and physical growth tend to follow, although the relationship is neither automatic nor uniform."
+   },
+   {
+    "kind": "p",
+    "html": "This definition widens the range of possible successes. Some cities should build large, diversified economies. Others can exercise national influence through a small concentration of exceptional institutions. A mid-sized city with a respected university, a cluster of specialised firms and a serious cultural presence can contribute far more than"
+   },
+   {
+    "kind": "p",
+    "html": "its headcount suggests. The planning question is therefore not \"how big should this city become?\" but \"what should this city be indispensable for?\""
+   },
+   {
+    "kind": "h2",
+    "html": "The case for concentration, and its limits"
+   },
+   {
+    "kind": "p",
+    "html": "Any argument for building more great cities must confront a serious objection: concentration is productive. Employers gain from deep labour markets, workers from having many potential employers within reach, suppliers from proximity to customers. Expertise circulates through dense professional networks. OECD research across five member countries finds that doubling a city's size is associated with a productivity gain of roughly 2 to 5 percent (<a href=\"https://econpapers.repec.org/RePEc:oec:govaab:2014/5-en\">Ahrend et al., 2014</a>). A strategy that scatters investment thinly would sacrifice these gains."
+   },
+   {
+    "kind": "p",
+    "html": "The same research, however, contains a second finding that is less often cited. For a given population, a metropolitan area with twice as many municipalities is associated with around 6 percent lower productivity, a penalty that a metropolitan governance body roughly halves (Ahrend et al., 2014; <a href=\"https://cepr.org/voxeu/columns/why-metropolitan-governance-matters-lot-more-you-think\">VoxEU summary</a>). Size matters, but so does how a city is run. The productivity of concentration is partly a product of policy, not only of geography."
+   },
+   {
+    "kind": "p",
+    "html": "The right ambition, then, is not dispersal but the creation of additional places where productive concentration can occur. Two international experiences illustrate what that requires."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Germany: a system, not a capital.</strong> Germany has no single dominant city in the way Paris dominates France or Seoul dominates Korea. Federal functions are deliberately spread: the Constitutional Court sits in Karlsruhe, the Bundesbank in Frankfurt, the Federal Employment Agency in Nuremberg, the Federal Administrative Court in Leipzig. Much of this reflects history and federalism rather than a modern plan, and it cannot simply be copied. But it shows that a large economy can sustain several cities of national rank, each anchored by institutions with real authority, without obvious loss of national productivity."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>South Korea: relocation without a full city.</strong> Sejong was established in 2012 as an administrative city about 120 kilometres south of Seoul, with a target population of 500,000 by 2030 (<a href=\"https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Sejong_City\">Wikipedia, citing city plans</a>). It reached roughly 395,000 by mid-2024, but the National Assembly and several key bodies stayed in Seoul, and officials spent years shuttling between the two. Its growth has also proved fragile: when the Ministry of Oceans and Fisheries left for Busan in late 2025, Sejong's population began to fall (<a href=\"https://www.koreajoongangdaily.com/korea/sejong-expects-10000-new-residents-as-justice-ministry-police-relocate/12860079\">Korea JoongAng Daily</a>). In 2026 Seoul announced a further phased move of around 350 agencies (<a href=\"https://en.thairath.co.th/news/foreign/2957180\">Thairath</a>). The lesson is that moving offices creates a government town, not a self- sustaining economy, unless private firms, universities and decision-making authority follow."
+   },
+   {
+    "kind": "h2",
+    "html": "The state already chooses"
+   },
+   {
+    "kind": "p",
+    "html": "Economic geography is often treated as the outcome of private preference. In Saudi Arabia, as in most economies where the state is the largest client, it is substantially the outcome of public decisions. Where ministries, regulators, universities, infrastructure agencies and state-backed enterprises locate determines where private firms can operate profitably. A company's apparent preference for one city often reflects the concentration of government clients, procurement officers, specialist advisers and professional networks there."
+   },
+   {
+    "kind": "p",
+    "html": "The Regional Headquarters Programme makes the point explicitly. Since 1 January 2024, government agencies have generally been barred from contracting with multinationals whose regional headquarters are outside the Kingdom, with narrow exceptions (<a href=\"https://www.clydeco.com/en/insights/2023/01/saudi-arabia-regional-headquarters-programme\">Clyde &amp; Co</a>). In practice, those headquarters have gone to Riyadh, as part of an ambition to make it one of the world's ten largest city economies (<a href=\"https://agbi.com/articles/saudi-regional-hq-programme-rules-loopholes\">AGBI</a>). There are sound reasons for that choice. But it illustrates how procurement rules, not only market forces, decide where high-value jobs settle."
+   },
+   {
+    "kind": "p",
+    "html": "A national urban strategy would make such effects visible and deliberate. Major public spending decisions should be assessed for their cumulative geographic consequences. Each individual institution may have good reasons to choose an established centre; a long succession of such choices can produce a degree of concentration that no national policy ever intended."
+   },
+   {
+    "kind": "p",
+    "html": "The practical instrument is a location framework for new public functions. Research centres, specialist hospitals, technical institutes, regulatory units and the expansions of public enterprises should undergo a location assessment weighing their operational needs against their potential to anchor a regional economy. Some will remain most effective near existing concentrations of expertise. Others could seed new ones."
+   },
+   {
+    "kind": "p",
+    "html": "Relocating established institutions deserves more caution than placing new ones, as Sejong's experience shows. Moves disrupt staff, break working relationships and carry large transition costs. New functions and expanding programmes offer cleaner opportunities. Wherever an institution sits, it needs real authority over staffing, spending, procurement and partnerships. A regional office that must refer every decision to the capital will have a correspondingly small effect on its surroundings."
+   },
+   {
+    "kind": "h2",
+    "html": "Choosing cities and building on what exists"
+   },
+   {
+    "kind": "p",
+    "html": "Selecting cities for sustained investment is a demanding political and economic exercise, and it should be done openly. A credible process would weigh existing employment and business activity, the population each city serves, access to markets, institutional capacity, infrastructure costs, environmental limits and evidence of commercial demand."
+   },
+   {
+    "kind": "p",
+    "html": "It should also identify places where poor services or connectivity impose heavy disadvantages on a wider territory."
+   },
+   {
+    "kind": "p",
+    "html": "The strongest candidates will rarely be those with the most available land or the most ambitious masterplans. A city with established firms, experienced workers and a university able to excel in a particular field is usually a better investment than a site where every element of an economy must be created at once. The selection should also keep distinct purposes distinct. Spending meant to raise national productivity should be judged on productivity. Spending meant to improve access to healthcare or education in underserved regions should be justified on those terms. Folding every objective into a general promise of growth makes priorities impossible to set and results impossible to judge."
+   },
+   {
+    "kind": "p",
+    "html": "Within each chosen city, the strategy should concentrate on a few credible opportunities, found by close examination of firms, skills, supply chains and customers. Assigning every city a logistics zone, a technology park and a creative quarter substitutes administrative uniformity for economic judgment. Existing activity is usually the best starting point:"
+   },
+   {
+    "kind": "li",
+    "html": "<strong>Jubail and Yanbu</strong> already host heavy industry under the Royal Commission. The adjacent opportunity is in maintenance, component supply, inspection, technical training and, over time, engineering services sold well beyond the industrial cities themselves."
+   },
+   {
+    "kind": "li",
+    "html": "<strong>Buraidah and the wider Qassim region</strong> have an established food economy, recognised by UNESCO's designation of Buraidah as a Creative City of Gastronomy in 2021 (<a href=\"https://www.arabnews.pk/node/1964151\">Arab News</a>). Processing, food testing, packaging, product development and distribution are natural next steps."
+   },
+   {
+    "kind": "li",
+    "html": "<strong>Al-Ahsa</strong> combines a large agricultural oasis, a substantial university and a living craft tradition; it became the first Gulf city in UNESCO's Creative Cities Network, for crafts and folk art, in 2015 (<a href=\"https://arabnews.pk/node/1513381\">Arab News</a>). Its opportunity lies in turning heritage and agriculture into professional, export-capable industries."
+   },
+   {
+    "kind": "li",
+    "html": "<strong>Abha and the Asir highlands</strong> offer climate, landscape and a university base that could support tourism services, hospitality training and environmental research."
+   },
+   {
+    "kind": "p",
+    "html": "These are illustrations, not recommendations; the point of a national process is to test such hypotheses against evidence. In each case the government's role is to remove specific obstacles: unreliable utilities, missing premises, absent certification bodies, weak training partnerships, or the lack of a shared testing facility. Such interventions are less visible than a flagship project, yet often matter more to competitiveness."
+   },
+   {
+    "kind": "p",
+    "html": "Saudi Arabia is not starting from nothing. The Future Saudi Cities Programme, run by the municipal affairs ministry with <a href=\"https://unhabitat.org/cpi-profile-al-ahsa\">UN-Habitat</a>, profiled 17 cities selected partly to promote more balanced regional development (UN-Habitat). In 2022 the Public Investment Fund launched the Saudi Downtown Company to develop mixed-use centres in 12 cities, from"
+   },
+   {
+    "kind": "p",
+    "html": "Madinah and Al-Ahsa to Arar and Dumat Al-Jandal (<a href=\"https://economymiddleeast.com/news/new-saudi-company-to-develop-downtown-areas-in-12-cities/\">Economy Middle East</a>). What is missing is a framework that links such physical development to productive activity, institutional authority and long-term public spending."
+   },
+   {
+    "kind": "h2",
+    "html": "Universities, culture and everyday life"
+   },
+   {
+    "kind": "p",
+    "html": "Universities should be central to this approach, but their contribution cannot be assumed. A university can operate for decades with little connection to the economy around it, and more students and new buildings will not change that. Selected institutions need sustained support to reach distinction in fields with real academic and economic foundations: recruiting and keeping strong faculty, funding research over meaningful horizons, building postgraduate programmes and holding demanding relationships with employers. Some valuable scholarship will yield cultural and intellectual returns rather than commercial ones, and that is legitimate. The aim is institutions whose work gives people a reason to move to a city. That depends on standards and continuity, both slow to build and quick to damage through frequent changes of direction."
+   },
+   {
+    "kind": "p",
+    "html": "Culture belongs in the strategy on the same footing. Cities exert influence through the knowledge and art they produce: publishing, architecture, design, theatre, music, historical research and criticism. These also create professions, firms and networks that keep talented people in place. The Kingdom's regional diversity is substantial, and UNESCO recognition now extends to five Saudi cities: Al-Ahsa, Buraidah, Taif, Riyadh and Madinah (<a href=\"https://cdn.saudigazette.com.sa/article/656178\">Saudi Gazette</a>). Designations, festivals and events can draw audiences. Their value lasts only when permanent capacity exists to carry the work forward: archives, libraries, collections, publishing programmes, artistic education, production facilities and paid professional roles. A city also needs room for culture that is not commissioned from above: affordable premises, accessible venues, predictable licensing and space for independent organisations."
+   },
+   {
+    "kind": "p",
+    "html": "None of this works without the ordinary conditions of urban life. Skilled professionals decide as households. A spouse's job prospects, schools, dependable healthcare, housing costs and the ability to keep family ties all shape whether a move becomes permanent. A city that recruits talent but cannot retain it will keep paying to rebuild expertise. Investment should therefore be organised around complete urban environments, with housing and transport planned alongside employment, and with particular attention to established districts where improvements benefit existing residents and use capacity already in place."
+   },
+   {
+    "kind": "p",
+    "html": "Environmental conditions must shape the strategy from the start. Water availability, heat, flood exposure, terrain, coastal vulnerability and heritage protection set the viable scale and form of growth. They belong in the economic appraisal of a city's future, not in a later planning stage. Population targets adopted before these questions are answered create"
+   },
+   {
+    "kind": "p",
+    "html": "expensive obligations."
+   },
+   {
+    "kind": "h2",
+    "html": "Who gains and who pays"
+   },
+   {
+    "kind": "p",
+    "html": "Urban policy is rarely neutral in its effects, and a strategy that ignores distribution will be captured by it. Four groups deserve explicit attention."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Landowners and renters.</strong> Announced investment raises land values before it raises incomes. Those who already own land near a planned district capture much of the early gain. Renters, young households and small firms absorb the cost through higher rents and operating expenses. Riyadh's own experience after the headquarters programme, when office rents rose sharply (AGBI), shows how quickly this happens. Serviced land supply, infrastructure sequencing and housing provision must therefore be coordinated before success arrives, not after. Land value capture, through betterment levies or public ownership of strategic sites, can return part of the gain to the public that created it."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Incoming professionals and existing residents.</strong> Sejong's early years included priority apartment allocations for relocating civil servants (Korea JoongAng Daily). Such measures help recruitment but can create two-tier cities in which newcomers enjoy subsidised access that long-standing residents do not. Saudi programmes should measure benefits to existing populations, not only to arrivals."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Selected and unselected cities.</strong> Choosing a limited number of cities means that others will not be chosen. Their residents will reasonably ask what they receive. The honest answer is the distinction drawn above: productivity investment goes where it yields most, while access investment in health, education and connectivity follows need. Keeping these streams separate, and visibly funded, is what makes selection politically defensible."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>The established centres.</strong> Riyadh and Jeddah will continue to justify major commitments, and nothing here argues otherwise. But they also bear the costs of over-concentration: congestion, housing pressure and strained services. A wider system of strong cities eases those pressures. The goal is not to take from the capital but to stop asking it to absorb every new national function."
+   },
+   {
+    "kind": "h2",
+    "html": "Governance, finance and evaluation"
+   },
+   {
+    "kind": "p",
+    "html": "Governance will decide whether any of this can be implemented coherently. Urban economies spill across municipal boundaries, while responsibility for transport, land, housing, utilities and services is divided among many bodies. The OECD evidence on fragmentation cited above cannot be transferred mechanically to Saudi Arabia, but it supports a clear principle: someone must be accountable for aligning investment across agencies. Each participating city should have a binding development framework that sets out responsibilities, funding commitments, decision rights and delivery milestones."
+   },
+   {
+    "kind": "p",
+    "html": "Existing institutions, including the royal commissions and regional development authorities, should be used where they can perform this role."
+   },
+   {
+    "kind": "p",
+    "html": "Financial discipline matters as much. Every major asset should have a funded operating and maintenance plan before construction is approved. The true public cost of attracting a firm should include guarantees, discounted land, infrastructure commitments and procurement preferences, not only headline incentives. Private participation should be valued by the capital and commercial risk investors genuinely bear. Long-term national commitment can coexist with rigorous project selection: funds released in successive tranches, with independent review of whether interventions are working, so that support for a city stays stable while individual projects remain open to revision or cancellation."
+   },
+   {
+    "kind": "p",
+    "html": "Evaluation must separate national gains from activity moved between places. A firm relocating from one Saudi city to another may lift local employment without adding anything to national output. Construction jobs end on completion. Rising property prices may signal scarcity or speculation rather than economic strength. The right measures are sustained earnings, productive investment, business survival, skilled employment, institutional quality, access to services, housing affordability and cultural participation. Where the goal is access or reducing regional disadvantage, progress should be measured against that goal directly."
+   },
+   {
+    "kind": "h2",
+    "html": "Conclusion"
+   },
+   {
+    "kind": "p",
+    "html": "Urban systems develop cumulatively. Institutions train people who found firms; firms create professional communities; those communities sustain schools, cultural organisations and further investment. Once these relationships take hold, a city generates development through its own economic and institutional life, and no longer depends on the next allocation from the centre."
+   },
+   {
+    "kind": "p",
+    "html": "Germany shows that a large economy can support several such cities. Sejong shows that relocating offices without authority, firms and complete urban environments produces something less. Saudi Arabia has the fiscal capacity, the regional diversity and the early institutional building blocks to do better than either precedent would predict. What it lacks is a single framework that decides where, on what terms and for whose benefit. Those decisions are being made already, one project at a time. Making them deliberately would determine how broadly, and how durably, the Kingdom's transformation takes root."
+   }
+  ],
+  "sources_title": "References",
+  "sources": [
+   "Ahrend, R., Farchy, E., Kaplanis, I. and Lembcke, A. (2014). <a href=\"https://econpapers.repec.org/RePEc:oec:govaab:2014/5-en\">What Makes Cities More Productive? Evidence on the Role of Urban Governance from Five OECD Countries</a>. OECD Regional Development Working Papers 2014/05.",
+   "Ahrend, R. et al. (2015). <a href=\"https://cepr.org/voxeu/columns/why-metropolitan-governance-matters-lot-more-you-think\">Why metropolitan governance matters a lot more than you think</a>. VoxEU.",
+   "UN-Habitat and Ministry of Municipal and Rural Affairs (2019). <a href=\"https://unhabitat.org/cpi-profile-al-ahsa\">Future Saudi Cities Programme: CPI Profile, Al-Ahsa</a>.",
+   "Economy Middle East (2022). <a href=\"https://economymiddleeast.com/news/new-saudi-company-to-develop-downtown-areas-in-12-cities/\">New Saudi company to develop downtown areas in 12 cities</a>.",
+   "Clyde &amp; Co (2023). <a href=\"https://www.clydeco.com/en/insights/2023/01/saudi-arabia-regional-headquarters-programme\">Saudi Arabia Regional Headquarters Programme: Contracting with government entities</a>.",
+   "AGBI (2024). <a href=\"https://agbi.com/articles/saudi-regional-hq-programme-rules-loopholes\">'No loopholes for companies' to be found in Saudi HQ rules</a>.",
+   "Arab News (2021). <a href=\"https://www.arabnews.pk/node/1964151\">UNESCO includes Saudi Arabia's Buraidah in Creative Cities Network</a>.",
+   "Arab News. <a href=\"https://arabnews.pk/node/1513381\">Al-Ahsa: Home to the most prominent archaeological and historical sites in Saudi Arabia</a>.",
+   "Saudi Gazette (2025). <a href=\"https://cdn.saudigazette.com.sa/article/656178\">Riyadh and Madinah join UNESCO Creative Cities Network</a>.",
+   "Korea JoongAng Daily (2026). <a href=\"https://www.koreajoongangdaily.com/korea/sejong-expects-10000-new-residents-as-justice-ministry-police-relocate/12860079\">Sejong expects 10,000 new residents as Justice Ministry, police relocate</a>.",
+   "Thairath (2026). <a href=\"https://en.thairath.co.th/news/foreign/2957180\">South Korea to move 350 government ministries and agencies from Seoul to Sejong by 2027</a>.",
+   "<a href=\"https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Sejong_City\">Sejong City</a>, Wikipedia (population targets and history)."
+  ]
+ },
+ "dc": {
+  "body": [
+   {
+    "kind": "h1",
+    "html": "Is it a good idea for governments to be investing massively in data centers?"
+   },
+   {
+    "kind": "p",
+    "html": "Anneer Center research team ·"
+   },
+   {
+    "kind": "p",
+    "html": "<em>Our answer is yes. Computing power is becoming as fundamental to a modern economy as electricity, and governments that stay out will end up renting a critical capability from others. But public money carries a duty that private money does not: it must not leave citizens worse off. This essay sets out the case for government investment in computing, the harms it can cause when done carelessly, and a simple test for telling the two apart.</em>"
+   },
+   {
+    "kind": "p",
+    "html": "<em>A desert data centre campus: solar power, transmission lines and the server halls they feed.</em>"
+   },
+   {
+    "kind": "h2",
+    "html": "Computing is becoming national infrastructure"
+   },
+   {
+    "kind": "p",
+    "html": "Artificial intelligence runs on computing power, and computing power runs in data centres. The four largest US cloud providers alone are expected to spend around $725 billion on capital investment in 2026. A country without its own capacity will increasingly depend on a small number of foreign companies for services that its government, businesses and universities cannot do without."
+   },
+   {
+    "kind": "p",
+    "html": "<em>Inside the server hall: the hardware here is replaced every few years, while the buildings</em>"
+   },
+   {
+    "kind": "p",
+    "html": "<em>and grid around it last for decades.</em>"
+   },
+   {
+    "kind": "p",
+    "html": "Governments have noticed. Saudi Arabia has created Humain, owned by the Public Investment Fund, with a target of about 6 gigawatts of data centre capacity by 2034 and an interim goal of 1.9 gigawatts by 2030. The European Union has committed up to €10 billion of public money to as many as seven \"AI gigafactories\", designed to attract at least €20 billion more from private investors. India's IndiaAI Mission subsidises access to computing for start-ups and researchers, and by mid-2026 had made more than 38,000 GPUs available through private providers."
+   },
+   {
+    "kind": "p",
+    "html": "The tools differ, but the conclusion is the same: computing is too important to be left entirely to the market. We agree. The real question is not whether governments should invest, but how they can do so without causing harm."
+   },
+   {
+    "kind": "h2",
+    "html": "The case for public investment"
+   },
+   {
+    "kind": "p",
+    "html": "The case is strong, and it rests on four points."
+   },
+   {
+    "kind": "p",
+    "html": "First, markets will not build the foundations on their own. A large data centre campus can draw as much electricity as a city, and it needs power plants, transmission lines, substations, fibre and land that take years to plan and benefit many users at once. Arizona shows what happens when this ground is not ready. The Phoenix area's largest utility has said that if every data centre that wanted to connect were able to do so, its"
+   },
+   {
+    "kind": "p",
+    "html": "peak demand would rise from a record 8.2 gigawatts to about 19 gigawatts. A state"
+   },
+   {
+    "kind": "p",
+    "html": "regulator observed that a grid built over a century would need to double within four to five years. That is public infrastructure work, and only governments can lead it."
+   },
+   {
+    "kind": "p",
+    "html": "<em>The ground a data centre stands on: transmission, substations and fibre are where public investment lasts longest.</em>"
+   },
+   {
+    "kind": "p",
+    "html": "Second, access matters. Universities, start-ups and public bodies often cannot afford commercial computing prices, and a country whose researchers cannot experiment will not build its own AI capability. India's subsidised access has brought prices well below international cloud rates, putting serious computing within reach of people who were previously priced out."
+   },
+   {
+    "kind": "p",
+    "html": "Third, sovereignty is a legitimate concern. Governments hold sensitive data on health, security and citizens, and it is reasonable for them to want it processed on infrastructure they control. Saudi Arabia's draft Global AI Hub Law goes further, proposing \"data embassies\" in which foreign governments and companies could host data in the kingdom under their own legal jurisdiction, turning sovereignty into a service other countries can buy."
+   },
+   {
+    "kind": "p",
+    "html": "Fourth, some countries have a genuine natural advantage. Saudi Arabia has repeatedly set world records for cheap solar power: the Shuaibah project was contracted at about 1.04 US cents per kilowatt-hour and the Najran plant at roughly 1.1 cents. Electricity is a data centre's largest running cost. For an energy-rich country, turning sunlight into computing may be worth far more than exporting the energy itself, and owning capacity brings"
+   },
+   {
+    "kind": "p",
+    "html": "bargaining power: the US approval in November 2025 allowing Humain to buy the"
+   },
+   {
+    "kind": "p",
+    "html": "equivalent of up to 35,000 Nvidia GB300-class systems, and partnerships with global investors, followed directly from the scale of Saudi ambition."
+   },
+   {
+    "kind": "h2",
+    "html": "Where investment can cause harm"
+   },
+   {
+    "kind": "p",
+    "html": "None of this means every pound, euro or riyal spent on data centres is well spent. Public investment can harm citizens in five ways."
+   },
+   {
+    "kind": "p",
+    "html": "The first is to <strong>public finances</strong> . AI chips are overtaken by newer generations within three to five years, so a data centre must be re-equipped several times over its life. Alvarez &amp; Marsal estimates that delivering even half of Saudi Arabia's announced capacity would need up to $42 billion in project capital by 2030, around $32 billion of it debt. Some analysts warn that server utilisation in parts of the region runs as low as 12 to 18 per cent. Debt taken on for assets that lose value before they are paid off is a burden on future taxpayers."
+   },
+   {
+    "kind": "p",
+    "html": "The second is to <strong>water</strong> . Cooling is the hidden cost of computing in hot countries. Older air-cooled data centres in the Gulf use around 80 per cent more electricity than the servers themselves, and the cheapest way to reduce that, evaporative cooling, consumes large volumes of water. In much of the Gulf that means energy-intensive desalinated water. In Chile, Google's proposed $200 million data centre in Cerrillos would have drawn an estimated 7.6 million litres of drinking water a day from a drought-stricken aquifer, until local opposition and an environmental court forced a redesign around air cooling."
+   },
+   {
+    "kind": "p",
+    "html": "<em>Cooling in a hot climate: evaporative systems save electricity but draw on scarce,</em>"
+   },
+   {
+    "kind": "p",
+    "html": "<em>desalinated water.</em>"
+   },
+   {
+    "kind": "p",
+    "html": "The third is to <strong>household bills</strong> . If data centres pay less than the full cost of the power and grid expansion they require, ordinary consumers make up the difference. Arizona has paused certain data centre tax incentives for three years, and its attorney general has called for a pause on new approvals, citing rising power bills."
+   },
+   {
+    "kind": "p",
+    "html": "The fourth is <strong>broken promises on jobs</strong> . Data centres employ many people during construction and very few afterwards. Meta's $1 billion facility in Kansas City created roughly 1,500 construction jobs but only about 100 permanent ones. In Chile, permit filings showed far fewer onsite jobs than the companies' public claims. When governments justify investment with employment figures that never materialise, they lose public trust."
+   },
+   {
+    "kind": "p",
+    "html": "The fifth is <strong>security and dependence</strong> . In March 2026, during the war with Iran, drones struck Amazon facilities in Bahrain and the UAE. Only three of the Gulf's 233 data centres were affected and services were rerouted, but data centres are now plainly strategic targets. Connectivity is exposed too: in September 2025, cuts to undersea cables near Jeddah slowed internet traffic across the Gulf and South Asia. And the most important input, advanced chips, depends on export licences that another government can widen or withdraw."
+   },
+   {
+    "kind": "p",
+    "html": "These are not reasons to stop investing. They are reasons to invest carefully."
+   },
+   {
+    "kind": "h2",
+    "html": "Choosing the right tool"
+   },
+   {
+    "kind": "p",
+    "html": "Governments have three broad tools, and each suits a different purpose."
+   },
+   {
+    "kind": "p",
+    "html": "The <strong>state as owner</strong> , as in Saudi Arabia, offers control, speed and bargaining power. It is the right tool for a sovereign core of capacity that handles sensitive government data, and for a country with a real cost advantage it can build a new export industry. Its risk is concentration: if the state carries all of the commercial risk alone, a downturn in AI demand lands directly on public finances. Sharing that risk through co-investment with private partners, as Humain has begun to do with infrastructure funds and global investors, reduces it."
+   },
+   {
+    "kind": "p",
+    "html": "The <strong>state as anchor customer</strong> , as in the European Union, uses public money as a guaranteed buyer so that private consortia build and run the facilities. It limits public exposure, but it is slow: the programme has been scaled back, and the first facilities are now expected around mid-2028."
+   },
+   {
+    "kind": "p",
+    "html": "The <strong>state as buyer of access</strong> , as in India, contracts private providers and subsidises usage. Its contracts even require providers to add capacity if prices fall, so the public benefits from cheaper hardware rather than being stuck with obsolete equipment. Its"
+   },
+   {
+    "kind": "p",
+    "html": "weakness is distribution: an analysis by ThePrint found that nine model builders received"
+   },
+   {
+    "kind": "p",
+    "html": "about 1,058 crore of the compute subsidy while researchers received around 10 crore."
+   },
+   {
+    "kind": "p",
+    "html": "The best strategies combine all three: own a strategic core, partner with private capital for commercial scale, and buy access on behalf of researchers and start-ups."
+   },
+   {
+    "kind": "h2",
+    "html": "A \"do no harm\" test"
+   },
+   {
+    "kind": "p",
+    "html": "Before committing public money to a data centre project, governments should be able to answer yes to five questions."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Would it survive a fall in AI prices?</strong> If the price of computing halved, would the project still repay its debt? Is commercial risk shared with private partners, rather than carried by the treasury alone?"
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Does it protect water?</strong> New facilities should not use drinking water for cooling, should favour closed-loop or air-based systems, and should report their water use alongside their energy efficiency."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Does it pay its own way on power?</strong> Operators should pay the full cost of the electricity and grid expansion they use, so that households are not subsidising data centres through their bills."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Does it benefit citizens directly?</strong> Licences and land grants should carry binding commitments: training and hiring nationals in skilled roles, and a reserved share of capacity for national universities and start-ups."
+   },
+   {
+    "kind": "p",
+    "html": "<strong>Is it resilient?</strong> Power supply, fibre routes and physical security should be planned in advance, with diverse cable routes and backup capacity, so that a single attack or cable cut cannot take services down."
+   },
+   {
+    "kind": "p",
+    "html": "A project that passes this test deserves strong public support. A project that fails it should be redesigned, not abandoned."
+   },
+   {
+    "kind": "h2",
+    "html": "Who should gain"
+   },
+   {
+    "kind": "p",
+    "html": "The test matters because it decides who benefits. Done carelessly, public investment in computing sends most of the gains to chipmakers and foreign cloud companies, while taxpayers carry the debt, households pay higher bills and communities give up scarce water. Done well, the same investment builds a stronger grid that serves every industry, gives researchers and start-ups affordable access to the tools of the AI era, creates skilled jobs for nationals, and turns a country's natural advantages into lasting economic strength."
+   },
+   {
+    "kind": "p",
+    "html": "Conclusion"
+   },
+   {
+    "kind": "p",
+    "html": "Is it a good idea for governments to invest massively in data centres? Yes. Computing is to this century what power stations were to the last, and countries that build it will shape the AI era rather than simply consume it. The scale of investment is not the problem. Harm is. Governments should build boldly, and measure success not in gigawatts installed but in whether their citizens are better off."
+   }
+  ],
+  "sources_title": "Sources",
+  "sources": [
+   "<a href=\"https://cryptobriefing.com/humain-3-billion-fund-data-centers-saudi/\">Humain capacity targets (Crypto Briefing)</a>",
+   "<a href=\"https://www.folio3.ai/ai-pulse/saudi-ai-firm-launches-data-center-expansion-new-operating-system\">Humain financing and plans (Folio3, Jan 2026)</a>",
+   "<a href=\"https://www.agbi.com/ai/2026/08/humain-quadruples-data-centre-capacity-with-mis-deal/\">Humain MIS deal; Alvarez &amp; Marsal estimate (AGBI, Aug 2026)</a>",
+   "<a href=\"https://www.middleeastainews.com/p/us-approves-up-to-70000-advanced\">US approves chip exports to Humain (Middle East AI News)</a>",
+   "<a href=\"https://www.saudigulfprojects.com/4500mw-saudi-arabia-awards-2-4-billion-renewable-energy-projects\">Saudi record solar tariffs (Saudi Gulf Projects)</a>",
+   "<a href=\"https://cms.law/en/sau/legal-updates/shaping-the-future-of-data-sovereignty-saudi-arabia-issues-new-draft-global-ai-hub-law\">Saudi draft Global AI Hub Law (CMS)</a>",
+   "<a href=\"https://www.storagenewsletter.com/2026/08/18/eu-launches-ai-gigafactories-call-to-boost-europes-computing-capacity-and-unlock-more-than-e30-billion-in-investment/\">EU AI gigafactories call (StorageNewsletter, Aug 2026)</a>",
+   "<a href=\"https://thegoodlobby.eu/?p=10587\">Hyperscaler capex comparison (The Good Lobby)</a>",
+   "<a href=\"https://www.careerindia.com/news/indiaai-mission-2026-access-subsidized-gpus-boost-ai-careers-scale-startups-011-66885.html\">IndiaAI GPU subsidies and capacity (CareerIndia, 2026)</a>",
+   "<a href=\"https://www.cxodigitalpulse.com/ai-mission-with-fresh-budgetary-allocation-it-ministry-looks-to-procure-up-to-500-gpus\">IndiaAI price-drop clause (CXO Digital Pulse)</a>",
+   "<a href=\"https://theprint.in/tech/indiaai-mission-9-model-builders-get-rs-1058-cr-of-govts-compute-subsidy-researchers-only-rs-10-cr/3076401/\">IndiaAI compute subsidy distribution (ThePrint, Oct 2026)</a>",
+   "<a href=\"https://gulfif.org/gulf-ai-infrastructure-examining-the-business-and-economic-case/\">Gulf AI infrastructure: business and economic case (Gulf International Forum, Mar 2026)</a>",
+   "<a href=\"https://www.semafor.com/article/04/13/2026/data-centers-under-fire-test-gulf-sovereign-ai-ambitions\">Data centers under fire (Semafor, Apr 2026)</a>",
+   "<a href=\"https://www.businesstoday.in/amp/world/story/internet-disrupted-across-mideast-south-asia-after-subsea-cable-cuts-near-jeddah-492917-2025-09-07\">Red Sea cable cuts near Jeddah (Business Today)</a>",
+   "<a href=\"https://moduledge.com/blog/data-center-cooling-extreme-heat\">Data centre cooling in extreme heat (Moduledge, Aug 2026)</a>",
+   "<a href=\"https://www.axios.com/newsletters/axios-phoenix-6cf8d29f-dc40-4657-8efa-5ba059032cb4\">Arizona's grid and data centres (Axios Phoenix, Jun 2026)</a>",
+   "<a href=\"https://www.bisnow.com/news/phoenix/data-center-community-relations/arizona-ag-calls-for-data-center-pause-as-backlash-in-phoenix-persists\">Arizona AG calls for data centre pause (Bisnow)</a>",
+   "<a href=\"https://www.wnem.com/2025/11/11/data-centers-continue-push-phoenix-areas-power-grid-limit\">Phoenix grid demand (InvestigateTV)</a>",
+   "<a href=\"https://developingtelecoms.com/telecom-technology/energy-sustainability/16331-chile-s-google-ruling-highlights-use-of-water-for-cooling-data-centres.html\">Chile's Google ruling and water use (Developing Telecoms)</a>",
+   "<a href=\"https://restofworld.org/tag/data-centers\">Data centre job claims vs permits in Chile (Rest of World)</a>"
+  ]
+ }
+}
