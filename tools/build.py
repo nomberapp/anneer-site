@@ -86,7 +86,7 @@ CSS = """
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-Medium.woff) format("woff");font-weight:500;font-display:swap}
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-SemiBold.woff) format("woff");font-weight:600;font-display:swap}
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-Bold.woff) format("woff");font-weight:700;font-display:swap}
-:root{--navy:#0B2B4E;--navy-2:#08203A;--blue:#1D5FA8;--gold:#B08D3C;--ink:#151A21;--muted:#5E6773;--line:#DDE1E6;--tint:#F3F5F8;
+:root{--navy:#0C2850;--navy-2:#08203A;--blue:#1D5FA8;--gold:#B08D3C;--ink:#151A21;--muted:#5E6773;--line:#DDE1E6;--tint:#F3F5F8;
 --serif:"Plex Serif",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--ar:"IBM Plex Sans Arabic","Noto Naskh Arabic",Tahoma,sans-serif}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
@@ -102,8 +102,8 @@ header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;
 .brand{display:flex;align-items:center;gap:14px;color:var(--navy)}
 .brand:hover{color:var(--navy)}
 .brand .mark{width:40px;height:40px;flex:none}
-.brand .t1{font-family:var(--serif);font-weight:700;font-size:28px;letter-spacing:.16em;line-height:1}
-.brand .t2{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:7px}
+.brand .logo{width:168px;height:auto;display:block}
+.brand .t2{font-size:9.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:8px}
 nav.main{display:flex;align-items:center;gap:30px}
 nav.main a{font-size:15px;font-weight:500;color:var(--ink);padding:8px 0;border-bottom:2px solid transparent}
 nav.main a:hover,nav.main a[aria-current]{color:var(--navy);border-bottom-color:var(--navy)}
@@ -118,7 +118,7 @@ nav.main a.btn{color:#fff;padding:0 18px;border:1px solid var(--navy)}nav.main a
 .topicbar .wrap{display:flex;gap:24px;align-items:center;min-height:46px;overflow-x:auto;white-space:nowrap;font-size:13.5px;scrollbar-width:none}
 .topicbar b{font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.08em;font-size:12px}
 .topicbar a{color:#39424D}.topicbar a:hover{color:var(--blue)}
-@media (max-width:960px){.menu-btn{display:block}nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px}nav.main.open{display:flex}nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}nav.main .btn{margin-top:12px}.bar{min-height:72px;position:relative}.brand .t1{font-size:23px}.brand .t2{font-size:9px;letter-spacing:.08em}}
+@media (max-width:960px){.menu-btn{display:block}nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px}nav.main.open{display:flex}nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}nav.main .btn{margin-top:12px}.bar{min-height:72px;position:relative}.brand .logo{width:138px}.brand .t2{font-size:9px;letter-spacing:.08em}}
 /* type */
 .label{font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .label a:hover{text-decoration:underline}
@@ -264,7 +264,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <meta property="og:type" content="{og_type}">
 <meta property="og:image" content="{SITE}{og_image}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/icon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/icon-180.png">
 <link rel="alternate" type="application/rss+xml" title="Anneer Center research" href="/feed.xml">
 {FONTS}{FONTS_AR if ar else ''}
 <link rel="stylesheet" href="/assets/site.css">
@@ -273,7 +273,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <body>
 <a class="skip" href="#content">{'تخطَّ إلى المحتوى' if ar else 'Skip to content'}</a>
 <header class="site"><div class="wrap bar">
-  <a class="brand" href="{'/ar/' if ar else '/'}" aria-label="{'مركز النير، الصفحة الرئيسية' if ar else 'Anneer Center home'}">{MARK}<span><div class="t1">{brand_t1}</div><div class="t2">{brand_t2}</div></span></a>
+  <a class="brand" href="{'/ar/' if ar else '/'}" aria-label="{'مركز النير، الصفحة الرئيسية' if ar else 'Anneer Center home'}"><span><img class="logo" src="/assets/img/logo-navy.png" alt="Anneer" width="800" height="145"><div class="t2">{brand_t2}</div></span></a>
   <button class="menu-btn" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">{'القائمة' if ar else 'Menu'}</button>
   <nav class="main" id="nav" aria-label="{'القائمة الرئيسية' if ar else 'Main'}">{navhtml}</nav>
 </div></header>
@@ -291,7 +291,7 @@ def footer_html(ar):
     if ar:
         return f"""<footer class="site"><div class="wrap">
 <div class="cols">
-<div><div class="fname" style="font-family:var(--ar);letter-spacing:0">مركز النير</div><div class="ar">للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">مركز أبحاث مستقل يقدّم تحليلاً رصيناً للقضايا التي تشكّل مستقبل الدول والمجتمعات.</p></div>
+<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:170px;height:auto"><div class="fname" style="font-family:var(--ar);letter-spacing:0;font-size:20px;margin-top:12px">مركز النير</div><div class="ar">للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">مركز أبحاث مستقل يقدّم تحليلاً رصيناً للقضايا التي تشكّل مستقبل الدول والمجتمعات.</p></div>
 <div><h4>المركز</h4><ul><li><a href="/ar/about/">عن المركز</a></li><li><a href="/ar/about/#approach">منهجنا</a></li><li><a href="/ar/contact/">تواصل معنا</a></li></ul></div>
 <div><h4>الأبحاث</h4><ul><li><a href="/ar/research/">جميع الأبحاث</a></li><li><a href="/ar/topics/">مجالات البحث</a></li></ul></div>
 <div><h4>تواصل</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/">English</a></li></ul></div>
@@ -300,7 +300,7 @@ def footer_html(ar):
 </div></footer>"""
     return f"""<footer class="site"><div class="wrap">
 <div class="cols">
-<div><div class="fname">ANNEER</div><div style="margin-top:6px">Center for Policy and Strategic Studies</div><div class="ar" lang="ar" dir="rtl" style="text-align:left">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p></div>
+<div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:170px;height:auto"><div style="margin-top:6px">Center for Policy and Strategic Studies</div><div class="ar" lang="ar" dir="rtl" style="text-align:left">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p></div>
 <div><h4>Institution</h4><ul><li><a href="/about/">About</a></li><li><a href="/about/#approach">Our approach</a></li><li><a href="/about/#standards">Research standards</a></li><li><a href="/contact/">Contact</a></li></ul></div>
 <div><h4>Research</h4><ul><li><a href="/research/">All research</a></li><li><a href="/topics/">Topics</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></div>
 <div><h4>Connect</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/contact/#media">Media inquiries</a></li><li><a href="/contact/#subscribe">Subscribe</a></li><li><a href="/ar/" lang="ar">العربية</a></li></ul></div>
@@ -580,7 +580,6 @@ def write(rel, text):
 
 def main():
     (ROOT / "assets" / "site.css").write_text(CSS.strip() + "\n")
-    (ROOT / "assets" / "favicon.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><rect width="44" height="44" fill="#0B2B4E"/><path d="M6 34 L17 16 L23 25 L28 18 L38 34 Z" fill="none" stroke="#D8C08A" stroke-width="2.5"/><circle cx="31" cy="11" r="3.5" fill="#B08D3C"/></svg>')
     urls = [write("/", home()), write("/research/", research_index()), write("/topics/", topics_page()),
             write("/about/", about()), write("/contact/", contact()),
             write("/ar/", ar_home()), write("/ar/research/", ar_research()), write("/ar/topics/", topics_page(True)),
