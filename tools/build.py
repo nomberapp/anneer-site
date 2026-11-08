@@ -168,7 +168,7 @@ footer.site ul{list-style:none;margin:0;padding:0}footer.site li{margin:0 0 10px
 footer.site a{color:#DDE4EC}footer.site a:hover{color:#fff;text-decoration:underline}
 footer.site .fname{font-family:var(--serif);font-weight:700;color:#fff;font-size:24px;letter-spacing:.16em}
 footer.site .ar{font-family:var(--ar);color:#C9D3DF;margin-top:6px}
-footer.site .social,.contact-box .social{display:flex;gap:10px;margin-top:18px}.social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.25);border-radius:50%}.contact-box .social a{border-color:var(--line)}.social a:hover{background:rgba(255,255,255,.08)}.contact-box .social a:hover{background:var(--tint)}
+footer.site .social,.contact-box .social{display:flex;gap:14px;margin-top:20px}.social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.25);border-radius:50%}.contact-box .social a{border-color:var(--line)}.social a:hover{background:rgba(255,255,255,.08)}.contact-box .social a:hover{background:var(--tint)}
 footer.site .copy{border-top:1px solid rgba(255,255,255,.14);margin-top:44px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 /* page head */
 .page-head{padding:56px 0 40px;border-bottom:1px solid var(--line)}
@@ -232,6 +232,9 @@ MARK = ('<svg class="mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="4
 NAV_EN = [("Research", "/research/"), ("Topics", "/topics/"), ("About", "/about/"), ("Contact", "/contact/")]
 NAV_AR = [("الأبحاث", "/ar/research/"), ("المجالات", "/ar/topics/"), ("عن المركز", "/ar/about/"), ("تواصل معنا", "/ar/contact/")]
 
+import hashlib
+CSS_VER = hashlib.md5(CSS.encode()).hexdigest()[:8]
+
 def mins(a): return max(1, round(words(a) / 230))
 def initials(name):
     if "team" in name: return "AC"
@@ -268,7 +271,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/icon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/icon-180.png">
 <link rel="alternate" type="application/rss+xml" title="Anneer Center research" href="/feed.xml">
 {FONTS}{FONTS_AR if ar else ''}
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v={CSS_VER}">
 {extra_head}
 </head>
 <body>
