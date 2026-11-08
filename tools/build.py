@@ -240,7 +240,6 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
     lang = "ar" if ar else "en"
     nav = NAV_AR if ar else NAV_EN
     navhtml = "".join(f'<a href="{u}"{" aria-current=\"page\"" if u == active else ""}>{t}</a>' for t, u in nav)
-    navhtml += ('<a class="lang" href="/">English</a>' if ar else '<a class="lang" href="/ar/" lang="ar">العربية</a>')
     navhtml += (f'<a class="btn" href="/ar/contact/#subscribe">اشترك</a>' if ar else '<a class="btn" href="/contact/#subscribe">Subscribe</a>')
     full_title = title if title.startswith(("Anneer", "مركز")) else f"{title} | {'مركز النير' if ar else 'Anneer Center'}"
     brand_t1 = "النير" if ar else "ANNEER"
@@ -303,7 +302,7 @@ def footer_html(ar):
 <div><img src="/assets/img/logo-white.png" alt="Anneer" width="800" height="146" style="width:130px;height:auto"><div style="margin-top:6px">Center for Policy and Strategic Studies</div><div class="ar" lang="ar" dir="rtl" style="text-align:left">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p></div>
 <div><h4>Institution</h4><ul><li><a href="/about/">About</a></li><li><a href="/about/#approach">Our approach</a></li><li><a href="/about/#standards">Research standards</a></li><li><a href="/contact/">Contact</a></li></ul></div>
 <div><h4>Research</h4><ul><li><a href="/research/">All research</a></li><li><a href="/topics/">Topics</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></div>
-<div><h4>Connect</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/contact/#media">Media inquiries</a></li><li><a href="/contact/#subscribe">Subscribe</a></li><li><a href="/ar/" lang="ar">العربية</a></li></ul></div>
+<div><h4>Connect</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/contact/#media">Media inquiries</a></li><li><a href="/contact/#subscribe">Subscribe</a></li></ul></div>
 </div>
 <div class="copy"><span>© {y} Anneer Center for Policy and Strategic Studies. All rights reserved.</span><span>Views expressed in Anneer publications are those of their authors.</span></div>
 </div></footer>"""
@@ -582,8 +581,7 @@ def main():
     (ROOT / "assets" / "site.css").write_text(CSS.strip() + "\n")
     urls = [write("/", home()), write("/research/", research_index()), write("/topics/", topics_page()),
             write("/about/", about()), write("/contact/", contact()),
-            write("/ar/", ar_home()), write("/ar/research/", ar_research()), write("/ar/topics/", topics_page(True)),
-            write("/ar/about/", ar_about()), write("/ar/contact/", ar_contact())]
+]
     for a in ARTICLES:
         urls.append(write(url_of(a), article(a)))
         if a.get("old"): write("/" + a["old"], redirect(url_of(a)))
