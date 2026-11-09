@@ -115,11 +115,19 @@ footer.site .copy{border-top:1px solid rgba(255,255,255,.14);margin-top:44px;pad
 .share{display:flex;gap:8px}.share a{font-size:13px;font-weight:600;border:1px solid var(--line);padding:0 12px;min-height:36px;display:inline-flex;align-items:center;border-radius:2px;color:var(--navy)}
 .share a:hover{border-color:var(--navy)}
 .art-body{display:grid;grid-template-columns:minmax(0,720px) minmax(0,1fr);gap:72px;padding:40px 0 24px}
-@media (max-width:1000px){.art-body{grid-template-columns:1fr;gap:24px}}
+@media (max-width:1000px){.art-body{grid-template-columns:minmax(0,1fr);gap:24px}}
 .hero-img{margin:0 0 32px}.hero-img figcaption{font-size:13.5px;color:var(--muted);margin-top:10px}
 .prose{font-family:var(--serif);font-size:19.5px;line-height:1.72;color:#1C222B}
 .prose p{margin:0 0 1.3em}.prose h2{font-size:27px;margin:1.7em 0 .7em}
 .prose ul{padding-left:1.2em;margin:0 0 1.3em}.prose li{margin:0 0 .6em}
+.prose h3{font-size:21px;margin:1.5em 0 .5em}
+.prose ol{padding-left:1.4em;margin:0 0 1.3em}
+.prose figure img{width:100%;height:auto;border:1px solid var(--line)}
+.prose .tbl{overflow-x:auto;margin:0 0 1.6em}
+.prose table{border-collapse:collapse;width:100%;min-width:600px;font-family:var(--sans);font-size:14.5px;line-height:1.45}
+.prose th{background:var(--navy);color:#fff;text-align:left;font-weight:600;padding:10px 12px;vertical-align:bottom}
+.prose td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top}
+.prose td p,.prose th p{margin:0}
 .prose figure{margin:2em 0}.prose figcaption{font-family:var(--sans);font-size:13.5px;color:var(--muted);margin-top:10px}
 .rail{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:28px}
 @media (max-width:1000px){.rail{position:static}}

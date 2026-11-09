@@ -28,6 +28,13 @@ TOPICS = {
 }
 
 ARTICLES = [
+    dict(key="adriatic", slug="adriatic-ionian-manufacturing-council",
+         title="An Adriatic\u2013Ionian Manufacturing Council: Making Southern Europe a Global Factory",
+         dek="Seven countries on the Adriatic and Ionian seas sit on the shortest route from Asia and the Gulf into central Europe. A council devoted solely to manufacturing could turn them into one integrated production system.",
+         author="Salman Al Dalbahi and Yazeed Al Rougi", date="2026-11-09",
+         topics=["economy", "governance"], kind="Policy paper",
+         image=None, image_alt="",
+         pdf="/assets/pdf/adriatic-ionian-manufacturing-council.pdf"),
     dict(key="dc", slug="governments-investing-in-data-centres",
          title="Is it a good idea for governments to be investing massively in data centers?",
          dek="Our answer is yes. Computing is becoming as fundamental as electricity, but public money carries a duty private money does not: it must not leave citizens worse off.",
@@ -195,11 +202,19 @@ footer.site .copy{border-top:1px solid rgba(255,255,255,.14);margin-top:44px;pad
 .share{display:flex;gap:8px}.share a{font-size:13px;font-weight:600;border:1px solid var(--line);padding:0 12px;min-height:36px;display:inline-flex;align-items:center;border-radius:2px;color:var(--navy)}
 .share a:hover{border-color:var(--navy)}
 .art-body{display:grid;grid-template-columns:minmax(0,720px) minmax(0,1fr);gap:72px;padding:40px 0 24px}
-@media (max-width:1000px){.art-body{grid-template-columns:1fr;gap:24px}}
+@media (max-width:1000px){.art-body{grid-template-columns:minmax(0,1fr);gap:24px}}
 .hero-img{margin:0 0 32px}.hero-img figcaption{font-size:13.5px;color:var(--muted);margin-top:10px}
 .prose{font-family:var(--serif);font-size:19.5px;line-height:1.72;color:#1C222B}
 .prose p{margin:0 0 1.3em}.prose h2{font-size:27px;margin:1.7em 0 .7em}
 .prose ul{padding-left:1.2em;margin:0 0 1.3em}.prose li{margin:0 0 .6em}
+.prose h3{font-size:21px;margin:1.5em 0 .5em}
+.prose ol{padding-left:1.4em;margin:0 0 1.3em}
+.prose figure img{width:100%;height:auto;border:1px solid var(--line)}
+.prose .tbl{overflow-x:auto;margin:0 0 1.6em}
+.prose table{border-collapse:collapse;width:100%;min-width:600px;font-family:var(--sans);font-size:14.5px;line-height:1.45}
+.prose th{background:var(--navy);color:#fff;text-align:left;font-weight:600;padding:10px 12px;vertical-align:bottom}
+.prose td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top}
+.prose td p,.prose th p{margin:0}
 .prose figure{margin:2em 0}.prose figcaption{font-family:var(--sans);font-size:13.5px;color:var(--muted);margin-top:10px}
 .rail{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:28px}
 @media (max-width:1000px){.rail{position:static}}
@@ -238,6 +253,7 @@ CSS_VER = hashlib.md5(CSS.encode()).hexdigest()[:8]
 def mins(a): return max(1, round(words(a) / 230))
 def initials(name):
     if "team" in name: return "AC"
+    if " and " in name: return "".join(n.strip()[0] for n in name.split(" and ")[:2]).upper()
     return "".join(w[0] for w in name.split()[:2]).upper()
 
 def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/og-default.jpg", og_type="website", extra_head=""):
@@ -428,6 +444,8 @@ def article(a):
         out.append(b)
     parts = []; in_list = False
     for b in out:
+        if b["kind"] == "html":
+            parts.append(b["html"]); continue
         if b["kind"] == "li":
             if not in_list: parts.append("<ul>"); in_list = True
             parts.append(f"<li>{b['html']}</li>"); continue
