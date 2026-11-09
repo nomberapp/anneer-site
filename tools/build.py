@@ -28,6 +28,15 @@ TOPICS = {
 }
 
 ARTICLES = [
+    dict(key="haqel", slug="haqel-the-saudi-monaco",
+         title="Haqel: The Saudi Monaco",
+         dek="At the northern tip of the Saudi Red Sea coast, a small town at the meeting point of three nations could become the Kingdom's most distinctive coastal destination, and the living northern gateway to NEOM.",
+         author="Saif Matrook", date="2026-11-09",
+         topics=["cities", "economy"], kind="Essay",
+         image="/assets/img/haqel-monaco.jpg", image_size=(1280, 853),
+         image_alt="Monaco's illuminated coastline and harbour at dusk, with a mountain rising behind the town",
+         image_caption="Monaco at dusk: a small town, a harbour and a mountain backdrop turned into one of the world's most admired coastal destinations.",
+         pdf=None),
     dict(key="adriatic", slug="adriatic-ionian-manufacturing-council",
          title="An Adriatic\u2013Ionian Manufacturing Council: Making Southern Europe a Global Factory",
          dek="Seven countries on the Adriatic and Ionian seas sit on the shortest route from Asia and the Gulf into central Europe. A council devoted solely to manufacturing could turn them into one integrated production system.",
@@ -372,7 +381,8 @@ def home():
     <h1><a href="{url_of(lead)}">{esc(lead['title'])}</a></h1>
     <p class="dek">{esc(lead['dek'])}</p>
     <div class="byline"><b>{esc(lead['author'])}</b> · {fmt_date(lead['date'])} · {mins(lead)} min read</div>
-    <p style="margin:26px 0 0"><a class="btn" href="{url_of(lead)}">Read the analysis</a></p>
+    <p style="margin:26px 0 0"><a class="btn" href="{url_of(lead)}">Read the {'essay' if lead['kind'] == 'Essay' else 'analysis'}</a></p>
+    {f'<a href="{url_of(lead)}" style="display:block;margin-top:32px"><img src="{lead["image"]}" alt="{esc(lead["image_alt"])}" width="{lead.get("image_size", (1600, 900))[0]}" height="{lead.get("image_size", (1600, 900))[1]}"></a>' if lead.get("image") else ""}
   </article>
   <aside class="side" aria-label="Latest research"><h2>Latest research</h2>{side}<p style="margin:18px 0 0"><a href="/research/" style="color:var(--blue);font-weight:600;font-size:14px">All research →</a></p></aside>
 </div></div>
@@ -466,7 +476,8 @@ def article(a):
     share = (f'<div class="share"><a href="https://twitter.com/intent/tweet?url={url}&amp;text={esc(a["title"])}&amp;via=anneercenter" target="_blank" rel="noopener">Share on X</a>'
              f'<a href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noopener">LinkedIn</a>'
              f'<a href="mailto:?subject={esc(a["title"])}&amp;body={url}">Email</a></div>')
-    hero = (f'<figure class="hero-img"><img src="{a["image"]}" alt="{esc(a["image_alt"])}" width="1600" height="900"><figcaption>Illustration: Anneer Center</figcaption></figure>' if a["image"] else "")
+    iw, ih = a.get("image_size", (1600, 900))
+    hero = (f'<figure class="hero-img"><img src="{a["image"]}" alt="{esc(a["image_alt"])}" width="{iw}" height="{ih}"><figcaption>{esc(a.get("image_caption", "Illustration: Anneer Center"))}</figcaption></figure>' if a["image"] else "")
     pdf = f'<a class="btn" href="{a["pdf"]}" download>Download PDF</a>' if a["pdf"] else ""
     related = "".join(f'<a class="t" href="{url_of(x)}">{esc(x["title"])}</a>' for x in ARTICLES if x is not a)
     topics_box = "".join(f'<a class="tag" href="/topics/#{t}">{TOPICS[t][0]}</a>' for t in a["topics"])
