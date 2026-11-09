@@ -34,7 +34,8 @@ ARTICLES = [
          author="Salman Al Dalbahi and Yazeed Al Rougi", date="2026-11-09",
          topics=["economy", "governance"], kind="Policy paper",
          image=None, image_alt="",
-         pdf="/assets/pdf/adriatic-ionian-manufacturing-council.pdf"),
+         pdf="/assets/pdf/adriatic-ionian-manufacturing-council.pdf",
+         og="/assets/img/adriatic-og.jpg"),
     dict(key="dc", slug="governments-investing-in-data-centres",
          title="Is it a good idea for governments to be investing massively in data centers?",
          dek="Our answer is yes. Computing is becoming as fundamental as electricity, but public money carries a duty private money does not: it must not leave citizens worse off.",
@@ -283,6 +284,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <meta property="og:type" content="{og_type}">
 <meta property="og:image" content="{SITE}{og_image}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}{og_image}">
 <meta name="twitter:site" content="@anneercenter">
 <link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/icon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/icon-180.png">
 <link rel="alternate" type="application/rss+xml" title="Anneer Center research" href="/feed.xml">
@@ -497,7 +499,7 @@ def article(a):
 </div>
 </div></article>"""
     return page(url_of(a), a["title"], a["dek"], body, active="/research/",
-                og_image=a["image"] or "/assets/img/og-default.jpg", og_type="article",
+                og_image=a.get("og") or a["image"] or "/assets/img/og-default.jpg", og_type="article",
                 extra_head=f'<meta property="article:published_time" content="{a["date"]}"><script type="application/ld+json">{ld}</script>')
 
 def about():
