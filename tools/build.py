@@ -28,6 +28,15 @@ TOPICS = {
 }
 
 ARTICLES = [
+    dict(key="justnat", slug="just-nationalism",
+         title="Just Nationalism: Pride Without Superiority",
+         dek="Nationalism is neither good nor bad in itself. What matters is whether national pride drives governments to compete in raising the quality of life of those they govern, or to compete in exclusion.",
+         author="Salman Al Dalbahi", date="2026-11-10",
+         topics=["governance"], kind="Analysis",
+         image="/assets/img/just-nationalism-flags.jpg",
+         image_alt="National flags of eleven countries flying on a row of flagpoles against an evening city skyline",
+         image_caption="Many nations, one standard: pride in one's own country without a claim of superiority over others.",
+         pdf=None),
     dict(key="haqel", slug="haqel-the-saudi-monaco",
          title="Haqel: The Saudi Monaco",
          dek="At the northern tip of the Saudi Red Sea coast, a small town at the meeting point of three nations could become the Kingdom's most distinctive coastal destination, and the living northern gateway to NEOM.",
@@ -479,6 +488,7 @@ def article(a):
             parts.append(f"<li>{b['html']}</li>"); continue
         if in_list: parts.append("</ul>"); in_list = False
         if b["kind"] == "h2": parts.append(f"<h2>{b['html']}</h2>")
+        elif b["kind"] == "h3": parts.append(f"<h3>{b['html']}</h3>")
         else:
             parts.append(f"<p>{b['html']}</p>")
             if a["key"] == "dc":
@@ -515,7 +525,7 @@ def article(a):
   <div>
     {hero}
     <div class="prose">{''.join(parts)}</div>
-    <section class="sources"><h2>{c['sources_title']}</h2><ol>{src_items}</ol></section>
+    {f'<section class="sources"><h2>{c["sources_title"]}</h2><ol>{src_items}</ol></section>' if c["sources"] else ""}
     <div class="cite"><b>Cite this publication:</b> {esc(a['author'])}, “{esc(a['title'])}”, Anneer Center for Policy and Strategic Studies, {fmt_date(a['date'])}, {url}</div>
     <div class="art-foot">{pdf}<a class="btn out" href="/research/">More research</a></div>
   </div>
