@@ -6,7 +6,7 @@
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-Medium.woff) format("woff");font-weight:500;font-display:swap}
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-SemiBold.woff) format("woff");font-weight:600;font-display:swap}
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-Bold.woff) format("woff");font-weight:700;font-display:swap}
-:root{--navy:#0C2850;--navy-2:#08203A;--blue:#1D5FA8;--gold:#B08D3C;--ink:#151A21;--muted:#5E6773;--line:#DDE1E6;--tint:#F3F5F8;
+:root{--navy:#000455;--navy-2:#00033D;--blue:#1D5FA8;--gold:#B08D3C;--ink:#151A21;--muted:#5E6773;--line:#DDE1E6;--tint:#F3F5F8;
 --serif:"Plex Serif",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--ar:"IBM Plex Sans Arabic","Noto Naskh Arabic",Tahoma,sans-serif}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}

@@ -103,7 +103,7 @@ CSS = """
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-Medium.woff) format("woff");font-weight:500;font-display:swap}
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-SemiBold.woff) format("woff");font-weight:600;font-display:swap}
 @font-face{font-family:"Inter";src:url(/assets/fonts/Inter-Bold.woff) format("woff");font-weight:700;font-display:swap}
-:root{--navy:#0C2850;--navy-2:#08203A;--blue:#1D5FA8;--gold:#B08D3C;--ink:#151A21;--muted:#5E6773;--line:#DDE1E6;--tint:#F3F5F8;
+:root{--navy:#000455;--navy-2:#00033D;--blue:#1D5FA8;--gold:#B08D3C;--ink:#151A21;--muted:#5E6773;--line:#DDE1E6;--tint:#F3F5F8;
 --serif:"Plex Serif",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--ar:"IBM Plex Sans Arabic","Noto Naskh Arabic",Tahoma,sans-serif}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
@@ -250,7 +250,7 @@ FONTS = ('<link rel="preload" href="/assets/fonts/PlexSerif-Bold.woff" as="font"
 FONTS_AR = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             '<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">')
 
-MARK = ('<svg class="mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" fill="#0B2B4E"/>'
+MARK = ('<svg class="mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" fill="#000455"/>'
         '<path d="M5 34 L17 15 L23 24 L28 17 L39 34 Z" fill="#fff"/>'
         '<circle cx="31" cy="10" r="2.6" fill="#B08D3C"/></svg>')
 
@@ -300,7 +300,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <title>{esc(full_title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{SITE}{path}">
-<meta name="theme-color" content="#0B2B4E">
+<meta name="theme-color" content="#000455">
 <meta property="og:site_name" content="Anneer Center">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
@@ -573,7 +573,7 @@ def contact():
 <div class="contact-box" id="media" style="scroll-margin-top:140px"><h3>Media</h3><p>Interview requests and media enquiries about our publications.</p><a href="mailto:{EMAIL}?subject=Media%20enquiry">{EMAIL}</a></div>
 <div class="contact-box" id="subscribe" style="scroll-margin-top:140px"><h3>Subscribe</h3><p>Receive new research from Anneer by email.</p><a href="mailto:{EMAIL}?subject=Subscribe%20to%20Anneer%20research">Subscribe by email</a></div>
 </div>
-<div class="contact-box" style="margin-top:40px;max-width:420px"><h3>Follow us</h3><p>@anneercenter on X, Instagram and TikTok.</p>{social_icons("#0C2850")}</div>
+<div class="contact-box" style="margin-top:40px;max-width:420px"><h3>Follow us</h3><p>@anneercenter on X, Instagram and TikTok.</p>{social_icons("#000455")}</div>
 </div></section>"""
     return page("/contact/", "Contact", "Contact Anneer Center for Policy and Strategic Studies, an independent think tank in Saudi Arabia, for research, partnership and media enquiries.", body, active="/contact/")
 
