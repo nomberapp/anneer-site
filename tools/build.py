@@ -266,6 +266,21 @@ def initials(name):
     if " and " in name: return "".join(n.strip()[0] for n in name.split(" and ")[:2]).upper()
     return "".join(w[0] for w in name.split()[:2]).upper()
 
+ORG = {"@type": "ResearchOrganization", "@id": SITE + "/#org",
+       "name": "Anneer Center for Policy and Strategic Studies",
+       "alternateName": ["Anneer Center", "Anneer", "مركز النير للسياسات والدراسات الاستراتيجية", "مركز النير"],
+       "description": "Anneer Center is an independent think tank and policy research centre based in Saudi Arabia, publishing research on energy, cities, technology, the economy, resources and governance.",
+       "url": SITE + "/", "logo": SITE + "/assets/icon-512.png", "image": SITE + "/assets/img/og-default.jpg",
+       "email": EMAIL, "address": {"@type": "PostalAddress", "addressCountry": "SA"},
+       "areaServed": ["Saudi Arabia", "Middle East", "Worldwide"],
+       "knowsAbout": ["Public policy", "Strategic studies", "Energy policy", "Urban policy", "Digital economy", "Public finance", "Governance"],
+       "sameAs": ["https://x.com/anneercenter", "https://www.instagram.com/anneercenter", "https://www.tiktok.com/@anneercenter"]}
+
+def org_ld():
+    return '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [ORG,
+        {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": "Anneer Center",
+         "publisher": {"@id": SITE + "/#org"}, "inLanguage": "en"}]}, ensure_ascii=False) + "</script>"
+
 def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/og-default.jpg", og_type="website", extra_head=""):
     lang = "ar" if ar else "en"
     nav = NAV_AR if ar else NAV_EN
@@ -393,7 +408,7 @@ def home():
 </div></section>
 
 <section class="statement"><div class="wrap grid">
-  <p class="big">Anneer Center is an independent think tank. We study the choices that shape nations and ask, of every policy, who gains and who pays.</p>
+  <p class="big">Anneer Center is an independent think tank based in Saudi Arabia. We study the choices that shape nations and ask, of every policy, who gains and who pays.</p>
   <div><p>Named after Jabal Al-Nir, the landmark mountain of Najd, the Center is based in Saudi Arabia and global in scope. Our research spans energy, cities, technology, the economy, resources and governance.</p>
   <a class="btn light" href="/about/">About the Center</a></div>
 </div></section>
@@ -408,8 +423,9 @@ def home():
   <div><a class="btn" href="mailto:{EMAIL}?subject=Subscribe%20to%20Anneer%20research">Subscribe by email</a> <a class="btn out" href="/feed.xml">RSS feed</a></div>
 </div></section>
 """
-    return page("/", "Anneer Center for Policy and Strategic Studies",
-                "Anneer Center is an independent think tank publishing rigorous research on energy, cities, technology and the economy, with a global outlook.", body)
+    return page("/", "Anneer Center for Policy and Strategic Studies | Think Tank in Saudi Arabia",
+                "Anneer Center is an independent think tank and policy research centre based in Saudi Arabia, publishing research on energy, cities, technology, the economy and governance.", body,
+                extra_head=org_ld())
 
 def research_index():
     buttons = '<button type="button" aria-pressed="true" data-f="all">All topics</button>' + "".join(
@@ -427,7 +443,7 @@ document.querySelectorAll('.filters button').forEach(function(b){{b.addEventList
  document.querySelectorAll('#list .item').forEach(function(it){{it.style.display=(f==='all'||it.dataset.topics.split(' ').indexOf(f)>-1)?'':'none'}});
 }})}});
 </script>"""
-    return page("/research/", "Research", "All research and analysis published by Anneer Center.", body, active="/research/")
+    return page("/research/", "Research and Policy Analysis", "Policy papers, essays and analysis from Anneer Center, an independent think tank in Saudi Arabia, on energy, cities, technology, the economy and governance.", body, active="/research/")
 
 def topics_page(ar=False):
     secs = ""
@@ -483,7 +499,8 @@ def article(a):
     topics_box = "".join(f'<a class="tag" href="/topics/#{t}">{TOPICS[t][0]}</a>' for t in a["topics"])
     ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": a["title"], "description": a["dek"],
                      "datePublished": a["date"], "author": {"@type": "Organization" if "team" in a["author"] else "Person", "name": a["author"]},
-                     "publisher": {"@type": "Organization", "name": "Anneer Center for Policy and Strategic Studies", "url": SITE},
+                     "publisher": {"@type": "Organization", "@id": SITE + "/#org", "name": ORG["name"], "url": SITE + "/", "logo": {"@type": "ImageObject", "url": ORG["logo"]}},
+                     "dateModified": a["date"], "inLanguage": "en",
                      "mainEntityOfPage": url, **({"image": SITE + a["image"]} if a["image"] else {})}, ensure_ascii=False)
     body = f"""
 <article><div class="wrap">
@@ -545,7 +562,7 @@ def about():
 <div><h2>Work with Anneer</h2><p>We welcome enquiries from researchers, institutions and media.</p></div>
 <div><a class="btn" href="/contact/">Contact the Center</a> <a class="btn out" href="/research/">Read our research</a></div>
 </div></section>"""
-    return page("/about/", "About", "About Anneer Center for Policy and Strategic Studies: mission, name, approach and research standards.", body, active="/about/")
+    return page("/about/", "About Anneer Center, an Independent Think Tank in Saudi Arabia", "Anneer Center for Policy and Strategic Studies is an independent Saudi think tank and policy research centre. Our mission, name, approach and research standards.", body, active="/about/", extra_head=org_ld())
 
 def contact():
     body = f"""
@@ -558,7 +575,7 @@ def contact():
 </div>
 <div class="contact-box" style="margin-top:40px;max-width:420px"><h3>Follow us</h3><p>@anneercenter on X, Instagram and TikTok.</p>{social_icons("#0C2850")}</div>
 </div></section>"""
-    return page("/contact/", "Contact", "Contact Anneer Center for Policy and Strategic Studies.", body, active="/contact/")
+    return page("/contact/", "Contact", "Contact Anneer Center for Policy and Strategic Studies, an independent think tank in Saudi Arabia, for research, partnership and media enquiries.", body, active="/contact/")
 
 def ar_home():
     lead = ARTICLES[0]
@@ -635,7 +652,9 @@ def main():
     (ROOT / "CNAME").write_text("anneer.org\n")
     (ROOT / ".nojekyll").write_text("")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-    sm = "".join(f"<url><loc>{SITE}{u}</loc></url>" for u in urls)
+    dates = {url_of(a): a["date"] for a in ARTICLES}
+    newest = max(dates.values())
+    sm = "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{dates.get(u, newest)}</lastmod></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
     print("built", len(urls), "pages")
 
