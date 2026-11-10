@@ -22,7 +22,7 @@ header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;
 .brand{display:flex;align-items:center;gap:14px;color:var(--navy);padding:14px 0}
 .brand:hover{color:var(--navy)}
 .brand .mark{width:40px;height:40px;flex:none}
-.brand .logo{width:320px;height:auto;display:block}
+.brand .logo{width:240px;height:auto;display:block}
 .brand .t2{display:none}
 nav.main{display:flex;align-items:center;gap:30px}
 nav.main a{font-size:15px;font-weight:500;color:var(--ink);padding:8px 0;border-bottom:2px solid transparent}
@@ -38,7 +38,7 @@ nav.main a.btn{color:#fff;padding:0 18px;border:1px solid var(--navy)}nav.main a
 .topicbar .wrap{display:flex;gap:24px;align-items:center;min-height:46px;overflow-x:auto;white-space:nowrap;font-size:13.5px;scrollbar-width:none}
 .topicbar b{font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.08em;font-size:12px}
 .topicbar a{color:#39424D}.topicbar a:hover{color:var(--blue)}
-@media (max-width:960px){.menu-btn{display:block}nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px}nav.main.open{display:flex}nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}nav.main .btn{margin-top:12px}.bar{min-height:72px;position:relative}.brand .logo{width:236px}.brand .t2{font-size:9px;letter-spacing:.08em}}
+@media (max-width:960px){.menu-btn{display:block}nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px}nav.main.open{display:flex}nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}nav.main .btn{margin-top:12px}.bar{min-height:72px;position:relative}.brand .logo{width:196px}.brand .t2{font-size:9px;letter-spacing:.08em}}
 /* type */
 .label{font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .label a:hover{text-decoration:underline}
