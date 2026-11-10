@@ -270,7 +270,7 @@ ORG = {"@type": "ResearchOrganization", "@id": SITE + "/#org",
        "name": "Anneer Center for Policy and Strategic Studies",
        "alternateName": ["Anneer Center", "Anneer", "مركز النير للسياسات والدراسات الاستراتيجية", "مركز النير"],
        "description": "Anneer Center is an independent think tank and policy research centre based in Saudi Arabia, publishing research on energy, cities, technology, the economy, resources and governance.",
-       "url": SITE + "/", "logo": SITE + "/assets/icon-512.png", "image": SITE + "/assets/img/og-anneer.jpg",
+       "url": SITE + "/", "logo": SITE + "/assets/icon-512.png", "image": SITE + "/assets/img/og-anneer2.jpg",
        "email": EMAIL, "address": {"@type": "PostalAddress", "addressCountry": "SA"},
        "areaServed": ["Saudi Arabia", "Middle East", "Worldwide"],
        "knowsAbout": ["Public policy", "Strategic studies", "Energy policy", "Urban policy", "Digital economy", "Public finance", "Governance"],
@@ -281,7 +281,7 @@ def org_ld():
         {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": "Anneer Center",
          "publisher": {"@id": SITE + "/#org"}, "inLanguage": "en"}]}, ensure_ascii=False) + "</script>"
 
-def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/og-anneer.jpg", og_type="website", extra_head=""):
+def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/og-anneer2.jpg", og_type="website", extra_head=""):
     lang = "ar" if ar else "en"
     nav = NAV_AR if ar else NAV_EN
     navhtml = "".join(f'<a href="{u}"{" aria-current=\"page\"" if u == active else ""}>{t}</a>' for t, u in nav)
@@ -310,7 +310,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{SITE}{og_image}">
 <meta name="twitter:site" content="@anneercenter">
-<link rel="icon" href="/assets/favicon.ico?v=2" sizes="any"><link rel="icon" href="/assets/icon-32.png?v=2" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/icon-180.png?v=2">
+<link rel="icon" href="/assets/favicon.ico?v=3" sizes="any"><link rel="icon" href="/assets/icon-32.png?v=3" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/icon-180.png?v=3">
 <link rel="alternate" type="application/rss+xml" title="Anneer Center research" href="/feed.xml">
 {FONTS}{FONTS_AR if ar else ''}
 <link rel="stylesheet" href="/assets/site.css?v={CSS_VER}">
@@ -319,7 +319,7 @@ def page(path, title, desc, body, active=None, ar=False, og_image="/assets/img/o
 <body>
 <a class="skip" href="#content">{'تخطَّ إلى المحتوى' if ar else 'Skip to content'}</a>
 <header class="site"><div class="wrap bar">
-  <a class="brand" href="{'/ar/' if ar else '/'}" aria-label="{'مركز النير، الصفحة الرئيسية' if ar else 'Anneer Center home'}"><span><img class="logo" src="/assets/img/logo-navy.svg" alt="Anneer Center for Policy &amp; Strategic Studies" width="562" height="96"><div class="t2">{brand_t2}</div></span></a>
+  <a class="brand" href="{'/ar/' if ar else '/'}" aria-label="{'مركز النير، الصفحة الرئيسية' if ar else 'Anneer Center home'}"><span><img class="logo" src="/assets/img/logo-navy.svg" alt="Anneer Center for Policy &amp; Strategic Studies" width="515" height="88"><div class="t2">{brand_t2}</div></span></a>
   <button class="menu-btn" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">{'القائمة' if ar else 'Menu'}</button>
   <nav class="main" id="nav" aria-label="{'القائمة الرئيسية' if ar else 'Main'}">{navhtml}</nav>
 </div></header>
@@ -344,7 +344,7 @@ def footer_html(ar):
     if ar:
         return f"""<footer class="site"><div class="wrap">
 <div class="cols">
-<div><img src="/assets/img/logo-white.svg" alt="Anneer" width="562" height="96" style="width:280px;height:auto"><div class="fname" style="font-family:var(--ar);letter-spacing:0;font-size:20px;margin-top:12px">مركز النير</div><div class="ar">للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">مركز أبحاث مستقل يقدّم تحليلاً رصيناً للقضايا التي تشكّل مستقبل الدول والمجتمعات.</p></div>
+<div><img src="/assets/img/logo-white.svg" alt="Anneer" width="515" height="88" style="width:280px;height:auto"><div class="fname" style="font-family:var(--ar);letter-spacing:0;font-size:20px;margin-top:12px">مركز النير</div><div class="ar">للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">مركز أبحاث مستقل يقدّم تحليلاً رصيناً للقضايا التي تشكّل مستقبل الدول والمجتمعات.</p></div>
 <div><h4>المركز</h4><ul><li><a href="/ar/about/">عن المركز</a></li><li><a href="/ar/about/#approach">منهجنا</a></li><li><a href="/ar/contact/">تواصل معنا</a></li></ul></div>
 <div><h4>الأبحاث</h4><ul><li><a href="/ar/research/">جميع الأبحاث</a></li><li><a href="/ar/topics/">مجالات البحث</a></li></ul></div>
 <div><h4>تواصل</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/">English</a></li></ul></div>
@@ -353,7 +353,7 @@ def footer_html(ar):
 </div></footer>"""
     return f"""<footer class="site"><div class="wrap">
 <div class="cols">
-<div><img src="/assets/img/logo-white.svg" alt="Anneer Center for Policy &amp; Strategic Studies" width="562" height="96" style="width:280px;height:auto"><div class="ar" lang="ar" dir="rtl" style="text-align:left;margin-top:12px">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p>{social_icons()}</div>
+<div><img src="/assets/img/logo-white.svg" alt="Anneer Center for Policy &amp; Strategic Studies" width="515" height="88" style="width:280px;height:auto"><div class="ar" lang="ar" dir="rtl" style="text-align:left;margin-top:12px">مركز النير للسياسات والدراسات الاستراتيجية</div><p style="margin-top:16px;max-width:340px">Independent research and analysis on the questions that shape nations and societies.</p>{social_icons()}</div>
 <div><h4>Institution</h4><ul><li><a href="/about/">About</a></li><li><a href="/about/#approach">Our approach</a></li><li><a href="/about/#standards">Research standards</a></li><li><a href="/contact/">Contact</a></li></ul></div>
 <div><h4>Research</h4><ul><li><a href="/research/">All research</a></li><li><a href="/topics/">Topics</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></div>
 <div><h4>Connect</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/contact/#media">Media inquiries</a></li><li><a href="/contact/#subscribe">Subscribe</a></li><li><a href="https://x.com/anneercenter" target="_blank" rel="noopener">X (Twitter)</a></li><li><a href="https://www.instagram.com/anneercenter" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@anneercenter" target="_blank" rel="noopener">TikTok</a></li></ul></div>
@@ -527,7 +527,7 @@ def article(a):
 </div>
 </div></article>"""
     return page(url_of(a), a["title"], a["dek"], body, active="/research/",
-                og_image=a.get("og") or a["image"] or "/assets/img/og-anneer.jpg", og_type="article",
+                og_image=a.get("og") or a["image"] or "/assets/img/og-anneer2.jpg", og_type="article",
                 extra_head=f'<meta property="article:published_time" content="{a["date"]}"><script type="application/ld+json">{ld}</script>')
 
 def about():
