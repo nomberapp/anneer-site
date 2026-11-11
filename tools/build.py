@@ -31,7 +31,7 @@ ARTICLES = [
     dict(key="justnat", slug="just-nationalism",
          title="Just Nationalism: Pride Without Superiority",
          dek="Nationalism is neither good nor bad in itself. What matters is whether national pride drives governments to compete in raising the quality of life of those they govern, or to compete in exclusion.",
-         author="Salman Al Dalbahi", date="2026-11-10",
+         author="Anneer Center", date="2026-11-10",
          topics=["governance"], kind="Analysis",
          image="/assets/img/just-nationalism-flags.jpg",
          image_alt="National flags of eleven countries flying on a row of flagpoles against an evening city skyline",
@@ -40,7 +40,7 @@ ARTICLES = [
     dict(key="haqel", slug="haqel-the-saudi-monaco",
          title="Haqel: The Saudi Monaco",
          dek="At the northern tip of the Saudi Red Sea coast, a small town at the meeting point of three nations could become the Kingdom's most distinctive coastal destination, and the living northern gateway to NEOM.",
-         author="Saif Matrook", date="2026-11-09",
+         author="Anneer Center", date="2026-11-09",
          topics=["cities", "economy"], kind="Essay",
          image="/assets/img/haqel-monaco.jpg", image_size=(1280, 853),
          image_alt="Monaco's illuminated coastline and harbour at dusk, with a mountain rising behind the town",
@@ -49,7 +49,7 @@ ARTICLES = [
     dict(key="adriatic", slug="adriatic-ionian-manufacturing-council",
          title="An Adriatic\u2013Ionian Manufacturing Council: Making Southern Europe a Global Factory",
          dek="Seven countries on the Adriatic and Ionian seas sit on the shortest route from Asia and the Gulf into central Europe. A council devoted solely to manufacturing could turn them into one integrated production system.",
-         author="Salman Al Dalbahi and Yazeed Al Rougi", date="2026-11-09",
+         author="Anneer Center", date="2026-11-09",
          topics=["economy", "governance"], kind="Policy paper",
          image=None, image_alt="",
          pdf="/assets/pdf/adriatic-ionian-manufacturing-council.pdf",
@@ -57,7 +57,7 @@ ARTICLES = [
     dict(key="dc", slug="governments-investing-in-data-centres",
          title="Is it a good idea for governments to be investing massively in data centers?",
          dek="Our answer is yes. Computing is becoming as fundamental as electricity, but public money carries a duty private money does not: it must not leave citizens worse off.",
-         author="Anneer Center research team", date="2026-11-04",
+         author="Anneer Center", date="2026-11-04",
          topics=["technology", "energy", "economy"], kind="Analysis",
          image="/assets/img/dc-campus.jpg",
          image_alt="A data centre campus in the desert, powered by a solar farm and a high-voltage transmission line",
@@ -65,7 +65,7 @@ ARTICLES = [
     dict(key="cities", slug="saudi-arabia-national-strategy-great-cities",
          title="Saudi Arabia Needs a National Strategy for Great Cities",
          dek="Where new jobs, universities and public investment settle will shape the Kingdom for longer than almost any sectoral programme. That choice should be made deliberately.",
-         author="Sanad Falhan", date="2026-10-31",
+         author="Anneer Center", date="2026-10-31",
          topics=["cities", "governance", "economy"], kind="Essay",
          image=None, image_alt="",
          pdf="/assets/pdf/saudi-arabia-national-strategy-great-cities.pdf",
@@ -73,7 +73,7 @@ ARTICLES = [
     dict(key="green", slug="who-is-benefiting-from-green-energy",
          title="Who Is Benefiting from Green Energy?",
          dek="Renewable power is a deflationary technology. Its gains flow not to whoever owns the resource, but to whoever owns the constraint.",
-         author="Anneer Center research team", date="2026-10-29",
+         author="Anneer Center", date="2026-10-29",
          topics=["energy", "economy"], kind="Analysis",
          image=None, image_alt="", pdf=None,
          old="green-energy.html"),
@@ -271,7 +271,7 @@ CSS_VER = hashlib.md5(CSS.encode()).hexdigest()[:8]
 
 def mins(a): return max(1, round(words(a) / 230))
 def initials(name):
-    if "team" in name: return "AC"
+    if name.startswith("Anneer Center"): return "AC"
     if " and " in name: return "".join(n.strip()[0] for n in name.split(" and ")[:2]).upper()
     return "".join(w[0] for w in name.split()[:2]).upper()
 
@@ -476,7 +476,7 @@ def article(a):
     for b in c["body"]:
         t = re.sub("<[^>]+>", "", b["html"]).strip()
         if b["kind"] == "h1": continue
-        if t.startswith("By [Analyst") or t in ("Sanad Falhan ·", "Anneer Center research team ·"): continue
+        if t.startswith("By [Analyst") or t == "Anneer Center ·": continue
         if a["key"] == "dc" and b["html"].startswith("<em>") and b["html"].endswith("</em>"): continue
         out.append(b)
     parts = []; in_list = False
@@ -508,7 +508,7 @@ def article(a):
     related = "".join(f'<a class="t" href="{url_of(x)}">{esc(x["title"])}</a>' for x in ARTICLES if x is not a)
     topics_box = "".join(f'<a class="tag" href="/topics/#{t}">{TOPICS[t][0]}</a>' for t in a["topics"])
     ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": a["title"], "description": a["dek"],
-                     "datePublished": a["date"], "author": {"@type": "Organization" if "team" in a["author"] else "Person", "name": a["author"]},
+                     "datePublished": a["date"], "author": {"@type": "Organization" if a["author"].startswith("Anneer Center") else "Person", "name": a["author"]},
                      "publisher": {"@type": "Organization", "@id": SITE + "/#org", "name": ORG["name"], "url": SITE + "/", "logo": {"@type": "ImageObject", "url": ORG["logo"]}},
                      "dateModified": a["date"], "inLanguage": "en",
                      "mainEntityOfPage": url, **({"image": SITE + a["image"]} if a["image"] else {})}, ensure_ascii=False)
